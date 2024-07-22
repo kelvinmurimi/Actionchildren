@@ -47,6 +47,9 @@ Route::prefix(config('admintw.prefix'))->middleware(['auth', 'activeUser', 'IpCh
     });
     require __DIR__.'/blog.php';
     require __DIR__.'/career.php';
+    require __DIR__.'/partners.php';
+    require __DIR__.'/staff.php';
+
 });
 
 require __DIR__.'/auth.php';

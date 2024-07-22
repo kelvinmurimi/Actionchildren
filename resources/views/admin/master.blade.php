@@ -55,8 +55,11 @@
 
         </div>
 
-        <div class="bg-white dark:bg-gray-900 dark:text-gray-300 p-5 flex justify-between text-xs">
+        <div class="bg-gray-300 dark:bg-gray-900 dark:text-gray-300 p-5 flex justify-between text-xs">
             <div>{{ __('Copyright') }} &copy; {{ date('Y') }} {{ config('app.name') }}</div>
+            <div class="text-center ">
+                <span class="text-indigo-500 text-md">Developed By </span class="text-blue -500text-md"><span>MurimiCodesTechnologies</span>
+              </div>
         </div>
 
     </div>

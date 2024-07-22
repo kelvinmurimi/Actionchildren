@@ -17,8 +17,9 @@
             </div>
         </div>
 
-        <form method="post" action="{{ route('admin.articles.store') }}" enctype="multipart/form-data">
+        <form method="post" action="{{ route('admin.careers.update',$career->id) }}" enctype="multipart/form-data">
             @csrf
+            @method('patch')
             <div class="mb-5">
                 <div class="rounded-md shadow-sm">
                     {{-- career Title --}}
@@ -53,9 +54,9 @@
                     @enderror
                     <div>
                         <p>preview</p>
-                        <a href="{{ asset($career->document) }}">{{ $career->document }}</a>
+                        <a href="{{ asset($career->document) }}" class="btn-sm">Download</a>
                     </div>
-                   
+
                     {{-- Article content --}}
                     <label for="Article Content"
                         class="block text-sm font-medium leading-5 text-gray-700 dark:text-gray-200"><strong>Job

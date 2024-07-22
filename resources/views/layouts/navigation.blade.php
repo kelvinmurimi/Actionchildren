@@ -30,7 +30,7 @@
 </div>
 
 @can('view_dashboard')
-    <x-nav.link route="dashboard" icon="fas fa-home" wire:navigate>{{ __('Dashboard') }}</x-nav.link>
+    <x-nav.link route="dashboard" icon="fas fa-server" wire:navigate>{{ __('Server') }}</x-nav.link>
 @endcan
 
 @if(can('view_system_settings') || can('view_roles') || can('view_audit_trails') || can('view_sent_emails'))
@@ -54,20 +54,24 @@
 @endcan
 
 @can('view_users')
-    <x-nav.link route="admin.careers.index" icon="fas fa-users" wire:navigate>Careers</x-nav.link>
+    <x-nav.link route="admin.careers.index" icon="fas fa-bullhorn" wire:navigate>Careers</x-nav.link>
+@endcan
+@can('view_users')
+    <x-nav.link route="admin.partners.index" icon="fas fa-user-plus" wire:navigate>Partners</x-nav.link>
+@endcan
+@can('view_users')
+    <x-nav.link route="admin.staffs.index" icon="fas fa-user" wire:navigate>Staff</x-nav.link>
 @endcan
 @if(can('view_system_settings') || can('view_roles') || can('view_audit_trails') || can('view_sent_emails'))
-    <x-nav.group label="Blog" route="admin.settings" icon="fas fa-cogs">
+    <x-nav.group label="Blog" route="admin.settings" icon="fas fa-toggle-on">
         @can('view_audit_trails')
-            <x-nav.group-item route="categories.index" icon="far fa-circle" wire:navigate>Categories</x-nav.group-item>
+            <x-nav.group-item route="categories.index" icon="fas fa-tag" wire:navigate>Categories</x-nav.group-item>
         @endcan
 
         @can('view_roles')
-            <x-nav.group-item route="admin.articles.index" icon="far fa-circle" wire:navigate>Articles</x-nav.group-item>
+            <x-nav.group-item route="admin.articles.index" icon="fas fa-edit" wire:navigate>Articles</x-nav.group-item>
         @endcan
 
-        @can('view_system_settings')
-            <x-nav.group-item route="admin.settings" icon="far fa-circle" wire:navigate>Focus Areas</x-nav.group-item>
-        @endcan
+
     </x-nav.group>
 @endif

@@ -6,6 +6,7 @@ namespace App\Http\Controllers\careers;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\careers\CreateCareersRequest;
+use App\Http\Requests\careers\UpdateCareersRequest;
 use App\Models\Career;
 use Illuminate\Http\Request;
 
@@ -36,7 +37,7 @@ class CareersController extends Controller
         //
         $request->validated();
         $document='jobs/documents'.'/'.time().'AfcicJobs'.'.'.$request->document->extension();
-       $request->document->move(public_path('jobs/documents'),$document);
+        $request->document->move(public_path('jobs/documents'),$document);
        Career::create([
         'title'=>$request->title,
         'content'=>$request->content,
@@ -62,9 +63,23 @@ class CareersController extends Controller
         ]);
     }
 
-    public function update(Request $request, $id)
+    public function update(UpdateCareersRequest $request, $id)
     {
         //
+        $request->validated();
+        $career=Career::findOrFail($id);
+
+        $document ='jobs/documents'.'/'.time().'AfcicJobs'.'.'.$request->document->extension();
+
+        $request->document->move(public_path('jobs/documents'),$document);
+
+       $career->update([
+        'title'=>$request->title,
+        'content'=>$request->content,
+        'description'=>$request->description,
+        'document'=>$document,
+       ]);
+       return redirect(route('admin.careers.index'))->with('success', 'Job  Updated successfully!');
     }
 
     public function destroy($id)
