@@ -18,20 +18,16 @@ class PagesController extends Controller
     //Home Page
     public function index()
     {
-        $categories = Category::with('article')->latest()->get($columns = ['*']);
-        $articles = Article::with(['user', 'likes'])->latest()->paginate(6); //'categories'
-        $home_slider = Article::with(['user', 'likes'])->latest()->paginate(3);
-        return view('pages.home', [
-            'articles' => $articles,
-            'home_slider' => $home_slider,
-            'categories' => $categories
+       $title="homepage";
+        return view('frontend.pages.index', [
+
         ]);
     }
 
     //Contact Page
-    public function contact()
+    public function careers()
     {
-        return view('pages.contact');
+        return view('frontend.pages.careers');
     }
 
     public function store(ContactFormRequest $req)
