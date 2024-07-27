@@ -119,6 +119,11 @@
         </div>
     </div>
     <!-- About End -->
+    <div class="alert alert-sucess">
+        ActionChildren
+
+Sorry We are currently conducting scheduled maintenance on Actionchildren.or.ke to enhance your experience. This maintenance began when this message was sent and will continue until today 11pm During this period, you may experience temporary unavailability or limited functionality
+        </div>
     <!-- Projects Start -->
     <div class="container-fluid project py-5">
         <div class="container py-5">
@@ -160,7 +165,7 @@
                                     <p class="fs-5 text-secondary mb-2">02</p>
                                     <a href="#" class="h4">Rehabilitation of Street Families</a>
                                     <p class="mb-0 mt-3">
-                                        
+
                                         With the goal of eradicating extreme poverty for all people everywhere and ending hunger, it all begins with ending child poverty; and according all children including street children equal opportunities in quality education, sanitation, economic opportunities and good health.</p>
                                 </div>
                                 <a class="btn btn-primary py-2 px-4" href="#">Read More</a>
@@ -181,7 +186,7 @@
                                     <p class="fs-5 text-secondary mb-2">03</p>
                                     <a href="#" class="h4">Safe Enviroment and Climate Change</a>
                                     <p class="mb-0 mt-3">
-                                        
+
                                         As climate change is affecting every country on every continent, Kenya is no exception. As such, Kenya has in the last few years experienced changed weather patterns that have resulted in long periods of drought and erratic rainfalls that result floods hence in food shortages and food insecurity in the country. Therefore, the need for solutions that will reduce carbon emissions and increase adaptation efforts are eminent.</p>
                                 </div>
                                 <a class="btn btn-primary py-2 px-4" href="#">Read More</a>
