@@ -16,7 +16,10 @@ use App\Http\Controllers\dashboard\AdminArticlesController;
    // Route::get('/articles/auther/manage', [AutherController::class, 'manageAutherArticles'])->name('admin.articles.manage');
 
 });
+
 //admin categories & Tags
 Route::prefix('dashboardcategories')->group(function () {
     Route::resource('/categories', AdmincategoriesController::class);
 });
+
+

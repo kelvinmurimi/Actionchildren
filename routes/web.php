@@ -10,6 +10,7 @@ use App\Livewire\Admin\Settings\Settings;
 use App\Livewire\Admin\Users\EditUser;
 use App\Livewire\Admin\Users\ShowUser;
 use App\Livewire\Admin\Users\Users;
+use App\Http\Controllers\ArticlesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -51,5 +52,7 @@ Route::prefix(config('admintw.prefix'))->middleware(['auth', 'activeUser', 'IpCh
     require __DIR__.'/staff.php';
 
 });
+//public articles/blog
+Route::get('/afcic/articles', [ArticlesController::class, 'index'])->name('articles.index');
 
 require __DIR__.'/auth.php';
