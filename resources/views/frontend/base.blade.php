@@ -10,9 +10,9 @@
         <!-- Favicon -->
         <link href="{{ asset('frontend/ui/img/main.jpg') }}" rel="icon">
 
-        <!-- Google Font -->
+        <!-- Google Font
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+           -->
         <!-- CSS Libraries
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">-->
         <link rel="stylesheet" href="{{ asset('frontend/ui/css/bootstrap.min.css')}}">
@@ -63,7 +63,7 @@
         <!-- Nav Bar Start -->
         <div class="navbar navbar-expand-lg bg-dark navbar-dark">
             <div class="container-fluid">
-                <a href="index.html" class="navbar-brand">ActionChildren</a>
+                <a href="/" class="navbar-brand">AFCIC</a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
                 </button>
