@@ -70,8 +70,17 @@
 
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
-                        <a href="index.html" class="nav-item nav-link active">Home</a>
-                        <a href="about.html" class="nav-item nav-link">About</a>
+                        <a href="/" class="nav-item nav-link active">Home</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About Us</a>
+                            <div class="dropdown-menu">
+                                <a href="{{ route('pages.about') }}" class="dropdown-item">About</a>
+                                <a href="{{ route('pages.team')}} "class="dropdown-item">Our Team</a>
+                                <a href="team.html" class="dropdown-item">Young Friends</a>
+                                <a href="donate.html" class="dropdown-item">Our Story</a>
+                                <a href="volunteer.html" class="dropdown-item">One Of us</a>
+                            </div>
+                        </div>
                         <a href="causes.html" class="nav-item nav-link">Causes</a>
                         <a href="event.html" class="nav-item nav-link">Events</a>
                         <a href="blog.html" class="nav-item nav-link">Blog</a>

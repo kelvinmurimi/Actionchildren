@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Http\Controllers;
 
 use App\Models\Staff;
+use Illuminate\Support\Str;
 use App\Http\Requests\staff\CreatestaffsRequest;
 use Illuminate\Http\Request;
 
@@ -36,12 +37,13 @@ class StaffsController extends Controller
     {
         //
         $request->validated();
+        $department=Str::slug($request->title,'-');
         $image ='staff/images'.'/'.time().$request->name.'.'.$request->image->extension();
         $request->image->move(public_path('staff/images'),$image);
         Staff::create([
              'name'=>$request->name,
              'bio'=>$request->bio,
-             'department'=>$request->department,
+             'department'=>$department,
              'image'=>$image,
         ]);
         return redirect(route('admin.staffs.index'))->with('success', 'Staff Created Successfully!');
