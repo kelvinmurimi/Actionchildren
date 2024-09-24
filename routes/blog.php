@@ -2,7 +2,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\dashboard\AdmincategoriesController;
 use App\Http\Controllers\dashboard\AdminArticlesController;
-
+use App\Http\Controllers\Pages\PagesController;
 
 
   //articles dashboard
@@ -21,5 +21,8 @@ use App\Http\Controllers\dashboard\AdminArticlesController;
 Route::prefix('dashboardcategories')->group(function () {
     Route::resource('/categories', AdmincategoriesController::class);
 });
+
+
+
 
 

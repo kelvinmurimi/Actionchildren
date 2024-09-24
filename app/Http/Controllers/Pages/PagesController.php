@@ -7,7 +7,7 @@ namespace App\Http\Controllers\Pages;
 use App\Http\Requests\ContactFormRequest;
 use App\Models\Contact;
 use App\Models\Staff;
-
+use App\Models\Partner;
 
 use App\Models\Article;
 use App\Http\Controllers\Controller;
@@ -30,10 +30,23 @@ class PagesController extends Controller
     public function aboutAfcic()
     {
         $title = "About Us";
+        $staff=Staff::where('department','board')->latest()->paginate(4);
         return view('frontend.pages.about', [
             'title' => $title,
+            'staff'=>$staff,
         ]);
     }
+
+    public function ourPartners(){
+        $title = "Our  Partners";
+
+        $partners=Partner::latest()->paginate(60);
+        return view('frontend.partners.index', [
+           'title' => $title,
+           'partners'=>$partners,
+       ]);
+   }
+
 
     public function teamAfcic()
     {
@@ -47,10 +60,16 @@ class PagesController extends Controller
 
     public function teamDetails($id){
          $title = "Our Team";
+         $youngfriends=Staff::where('department','young')->latest()->paginate(4);
          $staff=Staff::findOrFail($id);
+         $partners=Partner::latest()->paginate(5);
+         $articles=Article::latest()->paginate(6);
          return view('frontend.staffs.show', [
             'title' => $title,
             'staff'=>$staff,
+            'partners'=>$partners,
+            'youngfriends'=>$youngfriends,
+            'articles'=>$articles,
         ]);
     }
     //Contact Post Page
@@ -66,4 +85,44 @@ class PagesController extends Controller
         ]);
         return redirect(route('pages.contact'))->with('success', 'message delivered successfully,we will be in touch soon');
     }
+
+
+
+    public function blog(){
+        $title = "Our Blog";
+
+        $articles=Article::latest()->paginate(60);
+        return view('frontend.articles.index', [
+           'title' => $title,
+           'articles'=>$articles,
+       ]);
+   }
+
+
+    public function showblog($id){
+        $title = "Blog Details";
+        $youngfriends=Staff::where('department','young')->latest()->paginate(4);
+
+        $partners=Partner::latest()->paginate(5);
+        $articles=Article::latest()->paginate(6);
+        $blogdetail=Article::findOrFail($id);
+
+        return view('frontend.articles.show', [
+           'title' => $title,
+           'blogdetail'=>$blogdetail,
+           'partners'=>$partners,
+           'youngfriends'=>$youngfriends,
+           'articles'=>$articles,
+       ]);
+   }
+
+
+
+
+
+
+
+
+
+
 }

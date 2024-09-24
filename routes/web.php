@@ -53,6 +53,6 @@ Route::prefix(config('admintw.prefix'))->middleware(['auth', 'activeUser', 'IpCh
 
 });
 //public articles/blog
-Route::get('/afcic/articles', [ArticlesController::class, 'index'])->name('articles.index');
+//Route::get('/afcic/articles', [ArticlesController::class, 'index'])->name('articles.index');
 
 require __DIR__.'/auth.php';

@@ -8,12 +8,12 @@
             <div class="row">
                 <div class="col-lg-8">
                     <div class="single-content">
-                        <img src="{{ asset($staff->image) }}" />
-                        <h2>{{ $staff->name }}</h2>
-                        <p>
-                            {{ $staff->bio }}
-                        </p>
-
+                        <img src="{{ asset($blogdetail->image) }}" />
+                        <h2>{{ $blogdetail->title}}</h2>
+                        <span style="font-weight: 900; color:black;">
+                            {{ $blogdetail->excerpt }}
+                        </span>
+                            <p> {{ $blogdetail->body}}</p>
 
                     </div>
 
@@ -27,7 +27,7 @@
                                         <img src="{{ asset($article->image) }}" />
                                     </div>
                                     <div class="post-text">
-                                        <a href="">{{ $article->title }}</a>
+                                        <a href="{{ route('blog.show',$article->id) }}">{{ $article->title }}</a>
                                        <!-- <div class="post-meta">
                                             <p>By<a href="">Admin</a></p>
                                             <p>In<a href="">Web Design</a></p>

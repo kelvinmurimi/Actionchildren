@@ -83,9 +83,8 @@
                         </div>
                         <a href="causes.html" class="nav-item nav-link">Causes</a>
                         <a href="event.html" class="nav-item nav-link">Events</a>
-                        <a href="blog.html" class="nav-item nav-link">Blog</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Focus Areas</a>
                             <div class="dropdown-menu">
                                 <a href="single.html" class="dropdown-item">Detail Page</a>
                                 <a href="service.html" class="dropdown-item">What We Do</a>
@@ -94,6 +93,19 @@
                                 <a href="volunteer.html" class="dropdown-item">Become A Volunteer</a>
                             </div>
                         </div>
+                        <a href="{{ route('partners') }}" class="nav-item nav-link">Partners</a>
+                        <a href="{{ route('blog') }}" class="nav-item nav-link">Careers</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Our Centers</a>
+                            <div class="dropdown-menu">
+                                <a href="single.html" class="dropdown-item">Detail Page</a>
+                                <a href="service.html" class="dropdown-item">What We Do</a>
+                                <a href="team.html" class="dropdown-item">Meet The Team</a>
+                                <a href="donate.html" class="dropdown-item">Donate Now</a>
+                                <a href="volunteer.html" class="dropdown-item">Become A Volunteer</a>
+                            </div>
+                        </div>
+                        <a href="{{ route('blog') }}" class="nav-item nav-link">Blog</a>
                         <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>

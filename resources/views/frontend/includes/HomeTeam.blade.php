@@ -14,7 +14,7 @@
                     </div>
                     <div class="team-text">
                         <strong class="text-warning">{{ $team->department }}</strong><br>
-                       <a href="{{ route('staff.show',$staff->id) }}" class="btn btn-primary">
+                       <a href="{{ route('team.show',$team->id) }}" class="btn btn-primary">
                         About Me
                        </a>
                    </div>
