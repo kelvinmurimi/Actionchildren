@@ -26,6 +26,11 @@
 
         <!-- Template Stylesheet -->
         <link href="{{ asset('frontend/ui/css/style.css')}}" rel="stylesheet">
+        <style>
+            .white{
+                color:#fff;
+            }
+        </style>
     </head>
 
     <body>
@@ -74,11 +79,11 @@
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About Us</a>
                             <div class="dropdown-menu">
-                                <a href="{{ route('pages.about') }}" class="dropdown-item">About</a>
-                                <a href="{{ route('pages.team')}} "class="dropdown-item">Our Team</a>
-                                <a href="team.html" class="dropdown-item">Young Friends</a>
-                                <a href="donate.html" class="dropdown-item">Our Story</a>
-                                <a href="volunteer.html" class="dropdown-item">One Of us</a>
+                                <a href="{{ route('pages.about') }}" class="dropdown-item white">About</a>
+                                <a href="{{ route('pages.team')}} "class="dropdown-item white">Our Team</a>
+                                <a href="team.html" class="dropdown-item white">Young Friends</a>
+                                <a href="donate.html" class="dropdown-item white">Our Story</a>
+                                <a href="volunteer.html" class="dropdown-item white">One Of us</a>
                             </div>
                         </div>
                         <a href="causes.html" class="nav-item nav-link">Causes</a>
@@ -86,11 +91,11 @@
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Focus Areas</a>
                             <div class="dropdown-menu">
-                                <a href="single.html" class="dropdown-item">Detail Page</a>
-                                <a href="service.html" class="dropdown-item">What We Do</a>
-                                <a href="team.html" class="dropdown-item">Meet The Team</a>
-                                <a href="donate.html" class="dropdown-item">Donate Now</a>
-                                <a href="volunteer.html" class="dropdown-item">Become A Volunteer</a>
+                                <a href="single.html" class="dropdown-item white">Detail Page</a>
+                                <a href="service.html" class="dropdown-item white">What We Do</a>
+                                <a href="team.html" class="dropdown-item white">Meet The Team</a>
+                                <a href="donate.html" class="dropdown-item white">Donate Now</a>
+                                <a href="volunteer.html" class="dropdown-item white">Become A Volunteer</a>
                             </div>
                         </div>
                         <a href="{{ route('partners') }}" class="nav-item nav-link">Partners</a>
@@ -98,11 +103,11 @@
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Our Centers</a>
                             <div class="dropdown-menu">
-                                <a href="single.html" class="dropdown-item">Detail Page</a>
-                                <a href="service.html" class="dropdown-item">What We Do</a>
-                                <a href="team.html" class="dropdown-item">Meet The Team</a>
-                                <a href="donate.html" class="dropdown-item">Donate Now</a>
-                                <a href="volunteer.html" class="dropdown-item">Become A Volunteer</a>
+                                <a href="single.html" class="dropdown-item white">Working Children Center</a>
+                                <a href="service.html" class="dropdown-item white">Temporary Rescue Center</a>
+                                <a href="team.html" class="dropdown-item white">School Feeding Programme</a>
+                                <a href="donate.html" class="dropdown-item white">Donate</a>
+
                             </div>
                         </div>
                         <a href="{{ route('blog') }}" class="nav-item nav-link">Blog</a>
