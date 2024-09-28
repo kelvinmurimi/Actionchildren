@@ -4,18 +4,34 @@
         <div class="row align-items-center">
             <div class="col-lg-5">
                 <div class="volunteer-form">
-                    <form>
+                    <form  action="{{route('volunteer.details')}}" method="POST">
+                        @csrf
                         <div class="control-group">
-                            <input type="text" class="form-control" placeholder="Name" required="required" />
+                            <input type="text" class="form-control" name="name" placeholder="Name"  />
+                            @error('name')
+                            <p class="help-block text-danger">{{ $message }}</p>
+                        @enderror
                         </div>
                         <div class="control-group">
-                            <input type="email" class="form-control" placeholder="Email" required="required" />
+                            <input type="email" class="form-control" name="email" placeholder="Email"  />
+                            @error('email')
+                            <p class="help-block text-danger">{{ $message }}</p>
+                        @enderror
                         </div>
                         <div class="control-group">
-                            <textarea class="form-control" placeholder="Why you want to become a volunteer?" required="required"></textarea>
+                            <input type="text" class="form-control" name="phone" placeholder="phone number +...."  />
+                            @error('phone')
+                            <p class="help-block text-danger">{{ $message }}</p>
+                        @enderror
+                        </div>
+                        <div class="control-group">
+                            <textarea class="form-control" name="content" placeholder="Why you want to become a volunteer?" ></textarea>
+                            @error('content')
+                            <p class="help-block text-danger">{{ $message }}</p>
+                        @enderror
                         </div>
                         <div>
-                            <button class="btn btn-custom btn-primary" type="submit">Become a volunteer</button>
+                            <button class="btn btn-custom btn-primary" type="submit">Send</button>
                         </div>
                     </form>
                 </div>
@@ -23,8 +39,8 @@
             <div class="col-lg-7">
                 <div class="volunteer-content">
                     <div class="section-header">
-                        <p>Become A Volunteer</p>
-                        <h2>Let’s make a difference in the lives of Children</h2>
+                        <p>Become A Volunteer| Partner With Us</p>
+                        <h2> Let’s make a difference in the lives of Children</h2>
                     </div>
                     <div class="volunteer-text">
                         <p>

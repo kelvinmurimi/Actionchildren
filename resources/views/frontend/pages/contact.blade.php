@@ -1,73 +1,72 @@
 @extends('frontend.base')
 @section('content')
-    @include('errors.messages')
-    <section class="site-section">
+    @include('frontend.includes.banner')
+    @if (session('success'))
         <div class="container">
-            <div class="row mb-4">
-                <div class="col-md-6">
-                    <h1>Contact Us</h1>
+            <div class="row">
+                <div class="col-">
+                    <div class="alert alert-success ">
+                        <span>{{ session('success') }}</span>
+                    </div>
                 </div>
-            </div>
-            <div class="row blog-entries">
-                <div class="col-md-12 col-lg-8 main-content">
-
-                    <form action="{{ route('contact.store') }}" method="post">
-                        @csrf
-                        <div class="row">
-                            <div class="col-md-12 form-group">
-                                <label for="name">Name</label>
-                                <input type="text" name="name" id="name" class="form-control "
-                                    value=" {{ old('name') }}">
-                                @error('name')
-                                    <span class="text-danger">{{ $message }}</span>
-                                @enderror
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <label for="phone">Phone</label>
-                                <input type="text" name="phone" id="phone" class="form-control "
-                                    value=" {{ old('phone') }}">
-                                @error('phone')
-                                    <span class="text-danger">{{ $message }}</span>
-                                @enderror
-                            </div>
-                            <div class="col-md-12 form-group">
-                                <label for="email">Email</label>
-                                <input type="email" name="email" id="email" class="form-control "
-                                    value=" {{ old('email') }}">
-                                @error('email')
-                                    <span class="text-danger">{{ $message }}</span>
-                                @enderror
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12 form-group">
-                                <label for="message">Write Message content</label>
-                                <textarea name="content" id="message" class="form-control " cols="30" rows="8">
-                                    {{ old('content') }}
-                                </textarea>
-                                @error('content')
-                                    <span class="text-danger">{{ $message }}</span>
-                                @enderror
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6 form-group">
-                                <input type="submit" value="Send Message" class="btn btn-primary">
-                            </div>
-                        </div>
-                    </form>
-
-
-                </div>
-
-                <!-- END main-content -->
-
-                <div class="col-md-12 col-lg-4 sidebar">
-                    map
-                </div>
-                <!-- END sidebar -->
-
             </div>
         </div>
-    </section>
+    @endif
+
+
+    <!-- Contact Start -->
+    <div class="contact">
+        <div class="container">
+            <div class="section-header text-center">
+                <p>Get In Touch</p>
+                <h2>Contact Us For Any Query</h2>
+            </div>
+            <div class="contact-img">
+                <img src="{{ asset('frontend/ui/img/contact.jpg') }}" alt="Image">
+            </div>
+            <div class="contact-form">
+                <div id="success"></div>
+                <form name="sentMessage" id="contactForm" novalidate="novalidate" action="{{ route('contact.send') }}"
+                    method="post">
+                    @csrf
+                    <div class="control-group">
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name"
+                            required="required" data-validation-required-message="Please enter your name" />
+                        @error('name')
+                            <p class="help-block text-danger">{{ $message }}</p>
+                        @enderror
+
+                    </div>
+                    <div class="control-group">
+                        <input type="text" class="form-control" id="name" name="phone" placeholder="phone Number"
+                            required="required" data-validation-required-message="Please enter your name" />
+                        @error('phone')
+                            <p class="help-block text-danger">{{ $message }}</p>
+                        @enderror
+
+                    </div>
+                    <div class="control-group">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
+                            required="required" data-validation-required-message="Please enter your email" />
+                        @error('email')
+                            <p class="help-block text-danger">{{ $message }}</p>
+                        @enderror
+                    </div>
+
+                    <div class="control-group">
+                        <textarea class="form-control" name="content" id="message" placeholder="Message" required="required"
+                            data-validation-required-message="Please enter your message"></textarea>
+                        @error('content')
+                            <p class="help-block text-danger">{{ $message }}</p>
+                        @enderror
+                    </div>
+                    <div>
+                        <button class="btn btn-custom" type="submit" id="sendMessageButton">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+    @include('frontend.includes.BecomeVolunteer')
 @endsection

@@ -95,7 +95,7 @@
                                 <a href="service.html" class="dropdown-item white">What We Do</a>
                                 <a href="team.html" class="dropdown-item white">Meet The Team</a>
                                 <a href="donate.html" class="dropdown-item white">Donate Now</a>
-                                <a href="volunteer.html" class="dropdown-item white">Become A Volunteer</a>
+                                <a href="{{route('volunteer')}}" class="dropdown-item white">Become A Volunteer</a>
                             </div>
                         </div>
                         <a href="{{ route('partners') }}" class="nav-item nav-link">Partners</a>
@@ -111,7 +111,7 @@
                             </div>
                         </div>
                         <a href="{{ route('blog') }}" class="nav-item nav-link">Blog</a>
-                        <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        <a href="{{ route('contact') }}" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
             </div>
