@@ -75,11 +75,7 @@
                             </div>
                         </div>
 
-                        <div class="sidebar-widget">
-                            <div class="image-widget">
-                                <a href="#"><img src="img/blog-1.jpg" alt="Image"></a>
-                            </div>
-                        </div>
+                        @include('frontend.includes.imagewidget')
 
                         <!-- <div class="sidebar-widget">
                             <div class="tab-post">
@@ -121,11 +117,7 @@
                             </div>
                         </div>-->
 
-                        <div class="sidebar-widget">
-                            <div class="image-widget">
-                                <a href="#"><img src="img/blog-2.jpg" alt="Image"></a>
-                            </div>
-                        </div>
+                        @include('frontend.includes.imagewidget')
 
                         <div class="sidebar-widget">
                             <h2 class="widget-title">Our Partners</h2>
@@ -140,11 +132,7 @@
                             </div>
                         </div>
 
-                        <div class="sidebar-widget">
-                            <div class="image-widget">
-                                <a href="#"><img src="img/blog-3.jpg" alt="Image"></a>
-                            </div>
-                        </div>
+                        @include('frontend.includes.imagewidget')
 
                         <!--<div class="sidebar-widget">
                             <h2 class="widget-title">Quick Links</h2>

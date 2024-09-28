@@ -105,9 +105,9 @@
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Our Centers</a>
                             <div class="dropdown-menu">
-                                <a href="single.html" class="dropdown-item white">Working Children Center</a>
-                                <a href="service.html" class="dropdown-item white">Temporary Rescue Center</a>
-                                <a href="team.html" class="dropdown-item white">School Feeding Programme</a>
+                                <a href="{{ route('centers.wcc') }}" class="dropdown-item white">Working Children Center</a>
+                                <a href="{{ route('centers.trc') }}" class="dropdown-item white">Temporary Rescue Center</a>
+                                <a href="{{ route('centers.sfp') }}" class="dropdown-item white">School Feeding Programme</a>
                                 <a href="donate.html" class="dropdown-item white">Donate</a>
 
                             </div>
