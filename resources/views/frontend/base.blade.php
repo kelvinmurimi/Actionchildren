@@ -9,6 +9,7 @@
 
         <!-- Favicon -->
         <link href="{{ asset('frontend/ui/img/main.jpg') }}" rel="icon">
+        <link rel="stylesheet" href="{{asset('libcss/aimy/style.css')}}">
 
         <!-- Google Font
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -30,6 +31,9 @@
             .white{
                 color:#fff;
             }
+            .orange{
+                color:orange !important;
+            }
         </style>
     </head>
 
@@ -41,7 +45,7 @@
                     <div class="col-md-8">
                         <div class="top-bar-left">
                             <div class="text">
-                                <i class="fa fa-phone-alt"></i>
+                                <i class="fa fa-phone"></i>
                                 <p>+123 456 7890</p>
                             </div>
                             <div class="text">
@@ -93,15 +97,15 @@
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Careers</a>
                             <div class="dropdown-menu">
                                 <a href="single.html" class="dropdown-item white">Jobs</a>
-                               
+
                                 <a href="{{ route('partners') }}" class="dropdown-item white">Partner With Us</a>
-                                
+
                                 <a href="{{route('volunteer')}}" class="dropdown-item white">Become A Volunteer</a>
                                 <a href="donate.html" class="dropdown-item white">Donate Now</a>
                             </div>
                         </div>
-                        <a href="{{ route('partners') }}" class="nav-item nav-link">Our Focus Areas</a>
-                      
+                        <a href="{{ route('focusareas') }}" class="nav-item nav-link">Our Focus Areas</a>
+
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Our Centers</a>
                             <div class="dropdown-menu">
@@ -130,9 +134,9 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-contact">
                             <h2>Our Head Office</h2>
-                            <p><i class="fa fa-map-marker-alt"></i>123 Street, New York, USA</p>
-                            <p><i class="fa fa-phone-alt"></i>+012 345 67890</p>
-                            <p><i class="fa fa-envelope"></i>info@example.com</p>
+                            <p class="white"<i class="fa fa-map white"></i>123 Street, New York, USA</p>
+                            <p class="white"<i class="fa fa-phone"></i>+012 345 67890</p>
+                            <p class="white"<i class="fa fa-envelope"></i>info@example.com</p>
                             <div class="footer-social" >
                                 <a class="btn btn-custom" href=""><i class="fab fa-twitter"></i></a>
                                 <a class="btn btn-custom" href=""><i class="fab fa-facebook-f"></i></a>
