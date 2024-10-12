@@ -4,46 +4,46 @@
         <div class="owl-carousel">
             <div class="carousel-item">
                 <div class="carousel-img">
-                    <img src="{{ asset('frontend/slider/s2.jpg') }}" alt="Image">
+                    <img src="{{ asset('slider/slider1.jpg') }}" alt="Image">
                 </div>
                 <div class="carousel-text">
-                    <h1>Let's be kind for children</h1>
+                    <h1>Who we are</h1>
                     <p>
-                        Lorem ipsum dolor sit amet elit. Phasellus ut mollis mauris. Vivamus egestas eleifend dui ac consequat at lectus in malesuada
+                        We are a leading child protection, health and development organization that promotes access to equal and sustainable opportunities to children and vulnerable families.
                     </p>
                     <div class="carousel-btn">
-                        <a class="btn btn-custom" href="">Donate Now</a>
-                        <a class="btn btn-custom btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">Watch Video</a>
+                        <a class="btn btn-custom" href="{{ route('focusareas') }}">Our Focus Areas</a>
+
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
                 <div class="carousel-img">
-                    <img src="{{ asset('frontend/slider/sm2.jpg') }}" alt="Image">
+                    <img src="{{ asset('slider/slider2.jpg') }}" alt="Image">
                 </div>
                 <div class="carousel-text">
-                    <h1>Get Involved with helping hand</h1>
+                    <h1>What We Do</h1>
                     <p>
-                        Morbi sagittis turpis id suscipit feugiat. Suspendisse eu augue urna. Morbi sagittis, orci sodales varius fermentum, tortor
+                        We implement projects at the heart of the community aimed at child protection, education empowerment, health and community empowerment
                     </p>
                     <div class="carousel-btn">
-                        <a class="btn btn-custom" href="">Donate Now</a>
-                        <a class="btn btn-custom btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">Watch Video</a>
+                        <a class="btn btn-custom" href="{{ route('centers.trc') }}">Our Centers</a>
+                        <a class="btn btn-custom btn-play" data-toggle="modal" data-src="https://www.youtube.com/watch?v=NNCH07KZdLU" data-target="#videoModal">Watch Video</a>
                     </div>
                 </div>
             </div>
             <div class="carousel-item">
                 <div class="carousel-img">
-                    <img src="{{ asset('frontend/slider/edu1.jpg') }}" alt="Image">
+                    <img src="{{ asset('slider/slider3.jpg') }}" alt="Image">
                 </div>
                 <div class="carousel-text">
-                    <h1>Bringing smiles to millions</h1>
+                    <h1>Why we do it</h1>
                     <p>
-                        Sed ultrices, est eget feugiat accumsan, dui nibh egestas tortor, ut rhoncus nibh ligula euismod quam. Proin pellentesque odio
+                        Through our programs we are ending the cycle of poverty by empowering children and impacting the community for future generations.
                     </p>
                     <div class="carousel-btn">
-                        <a class="btn btn-custom" href="">Donate Now</a>
-                        <a class="btn btn-custom btn-play" data-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">Watch Video</a>
+                        <a  class="btn btn-custom" href="">Donate</a>
+                        <a  href="" class="btn btn-custom btn-play">Donation Causes</a>
                     </div>
                 </div>
             </div>

@@ -4,12 +4,12 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-6">
-                        <div class="about-img" data-parallax="scroll" data-image-src="{{ asset('frontend/homeimg/third.jpg') }}"></div>
+                        <div class="about-img" data-parallax="scroll" data-image-src="{{ asset('slider/mission.jpg') }}"></div>
                     </div>
                     <div class="col-lg-6">
                         <div class="section-header">
                             <p>About Us</p>
-                            <h2>Worldwide non-profit charity organization</h2>
+                            <h2>MAKE A DIFFERENCE IN A CHILD'S LIFE</h2>
                         </div>
                         <div class="about-tab">
                             <ul class="nav nav-pills nav-justified">
@@ -20,27 +20,29 @@
                                     <a class="nav-link" data-toggle="pill" href="#tab-content-2">Mission</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" data-toggle="pill" href="#tab-content-3">Vision</a>
+                                    <a class="nav-link" data-toggle="pill" href="#tab-content-3">Our Work</a>
                                 </li>
                             </ul>
 
                             <div class="tab-content">
                                 <div id="tab-content-1" class="container tab-pane active">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vitae pellentesque turpis. Donec in hendrerit dui, vel blandit massa. Ut vestibulum suscipit cursus. Cras quis porta nulla, ut placerat risus. Aliquam nec magna eget velit luctus dictum. Phasellus et felis sed purus tristique dignissim. Morbi sit amet leo at purus accumsan pellentesque. Vivamus fermentum nisi vel dapibus blandit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    <strong>Action for Children in Conflict is dedicated to the improvement of the lives of vulnerable children, women and communities by promoting their access to quality education, health, food, safe and clean environment, economic empowerment and the protection of their rights and fundamental freedoms.</strong>
                                     <div>
-                                        <button class="btn btn-custom " type="submit">Learn More  About Us</button>
+                                        <a href="{{ route('pages.about') }}" class="btn btn-primary ">Learn More  About Us</a>
                                     </div>
                                 </div>
                                 <div id="tab-content-2" class="container tab-pane fade">
-                                    Sed tincidunt, magna ut vehicula volutpat, turpis diam condimentum justo, posuere congue turpis massa in mi. Proin ornare at massa at fermentum. Nunc aliquet sed nisi iaculis ornare. Nam semper tortor eget est egestas, eu sagittis nunc sodales. Interdum et malesuada fames ac ante ipsum primis in faucibus. Praesent bibendum sapien sed purus molestie malesuada. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    <b>
+                                        Enhance and support the growth and development of children, young people and their families by facilitating access to justice, education, health, and their psychosocial and economic support. Putting communities at the center and fostering their growth through fair and sustainable opportunities.
+                                    </b>
                                     <div>
-                                        <button class="btn btn-custom " type="submit">Learn More  About Us</button>
+                                        <a href="{{ route('centers.trc') }}" class="btn btn-custom ">Our Centers</a>
                                     </div>
                                 </div>
                                 <div id="tab-content-3" class="container tab-pane fade">
-                                    Aliquam dolor odio, mollis sed feugiat sit amet, feugiat ut sapien. Nunc eu dignissim lorem. Suspendisse at hendrerit enim. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed condimentum semper turpis vel facilisis. Nunc vel faucibus orci. Mauris ut mauris rhoncus, efficitur nisi at, venenatis quam. Praesent egestas pretium enim sit amet finibus. Curabitur at erat molestie, tincidunt lorem eget, consequat ligula.
+                                    Our programs focus on the following outcomes: rehabilitation and reintegration, economic empowerment, access to justice, education empowerment and climate change and safe environment.  The programs are all connected and essential to ending the cycle of poverty.
                                     <div>
-                                        <button class="btn btn-custom " type="submit">Learn More  About Us</button>
+                                        <a href="{{ route('focusareas') }}" class="btn btn-primary ">Our Focus Areas</a>
                                     </div>
                                 </div>
                             </div>

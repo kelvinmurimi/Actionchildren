@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>{{ $title ?? null }} - {{ config('app.name', 'Laravel') }}</title>
+        <title>{{ $title ?? null }} - {{ config('app.name', 'Afcic') }}</title>
         <meta content="width=device-width, initial-scale=1.0" name="viewport">
         <meta content="Free Website Template" name="keywords">
         <meta content="Free Website Template" name="description">
@@ -11,16 +11,16 @@
         <link href="{{ asset('frontend/ui/img/main.jpg') }}" rel="icon">
         <link rel="stylesheet" href="{{asset('libcss/aimy/style.css')}}">
 
-        <!-- Google Font
+        <!-- Google Font-->
         <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-           -->
+
         <!-- CSS Libraries
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">-->
         <link rel="stylesheet" href="{{ asset('frontend/ui/css/bootstrap.min.css')}}">
         <link rel="stylesheet" href="{{ asset('frontend/ui/css/fontawesome-all.min.css')}}">
         <link rel="stylesheet" href="{{ asset('frontend/ui/css/fontawesome.min.css')}}">
         <link rel="stylesheet" href="{{ asset('frontend/ui/css/fontawesome.css')}}">
-        <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">-->
+        <!----><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
         <link href="{{ asset('frontend/ui/lib/flaticon/font/flaticon.css')}}" rel="stylesheet">
         <link href="{{ asset('frontend/ui/lib/animate/animate.min.css')}}" rel="stylesheet">
         <link href="{{ asset('frontend/ui/lib/owlcarousel/assets/owl.carousel.min.css')}}" rel="stylesheet">
@@ -46,11 +46,11 @@
                         <div class="top-bar-left">
                             <div class="text">
                                 <i class="fa fa-phone"></i>
-                                <p>+123 456 7890</p>
+                                <p>+254 714 038285</p>
                             </div>
                             <div class="text">
                                 <i class="fa fa-envelope"></i>
-                                <p>info@example.com</p>
+                                <p>infokenya@actionchildren.or.ke</p>
                             </div>
                         </div>
                     </div>
@@ -134,9 +134,11 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-contact">
                             <h2>Our Head Office</h2>
-                            <p class="white"<i class="fa fa-map white"></i>123 Street, New York, USA</p>
-                            <p class="white"<i class="fa fa-phone"></i>+012 345 67890</p>
-                            <p class="white"<i class="fa fa-envelope"></i>info@example.com</p>
+                            <p class="white"><i class="fa fa-map-marker-alt"></i>Action for Children in Conflict Section 9, Thika, Kenya. P.O. BOX 6439-01000</p>
+                            <p class="white"><i class="fa fa-phone"></i>+254 714 038285,
+                                +254 722 753 137</p>
+                            <p class="white"><i class="fa fa-envelope"></i>infokenya@actionchildren.or.ke
+                                kenyadirector@actionchildren.or.ke</p>
                             <div class="footer-social" >
                                 <a class="btn btn-custom" href=""><i class="fab fa-twitter"></i></a>
                                 <a class="btn btn-custom" href=""><i class="fab fa-facebook-f"></i></a>
@@ -181,10 +183,10 @@
             <div class="container copyright">
                 <div class="row">
                     <div class="col-md-6">
-                        <p class="text-white">&copy; <a href="#">Your Site Name</a>, All Right Reserved.</p>
+                        <p class="text-white">&copy; <a href="#">{{ config('app.name', 'Laravel') }}</a>, All Right Reserved.</p>
                     </div>
                     <div class="col-md-6">
-                        <p>Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
+                        <p>Designed By <a href="">Murimicodes</a></p>
                     </div>
                 </div>
             </div>
