@@ -6,6 +6,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
         <title>{{ $title ?? null }} - {{ config('app.name', 'Laravel') }}</title>
         @vite(['resources/sass/app.scss', 'resources/js/app.js'])
+        <link rel="stylesheet" href="{{ asset('build/assets/app-f6d43e5b.css') }}">
     </head>
     <body>
 
@@ -63,6 +64,6 @@
         </div>
 
     </div>
-
+<script src="{{ asset('build/assets/app-44e72322.js') }}"></script>
     </body>
 </html>
