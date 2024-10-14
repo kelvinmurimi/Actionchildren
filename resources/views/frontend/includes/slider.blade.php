@@ -42,8 +42,8 @@
                         Through our programs we are ending the cycle of poverty by empowering children and impacting the community for future generations.
                     </p>
                     <div class="carousel-btn">
-                        <a  class="btn btn-custom" href="">Donate</a>
-                        <a  href="" class="btn btn-custom btn-play">Donation Causes</a>
+                        <a  class="btn btn-custom" href="{{ route('donation.form') }}">Donate</a>
+                        <a  href="{{ route('donation.form') }}" class="btn btn-custom btn-play">Donation Causes</a>
                     </div>
                 </div>
             </div>

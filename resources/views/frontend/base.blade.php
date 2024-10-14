@@ -85,23 +85,23 @@
                             <div class="dropdown-menu">
                                 <a href="{{ route('pages.about') }}" class="dropdown-item white">About</a>
                                 <a href="{{ route('pages.team')}} "class="dropdown-item white">Our Team</a>
-                                <a href="team.html" class="dropdown-item white">Young Friends</a>
+                                <a href="{{ route('pages.team') }}" class="dropdown-item white">Young Friends</a>
                                 <a href="https://john-muiruri.maps.arcgis.com/apps/Cascade/index.html?appid=f2a1675950a241a8ac27aa57ed711850" class="dropdown-item white">Our Story</a>
                                 <a href="https://oneofusproject.com/kenya-2020" class="dropdown-item white">One Of us</a>
                                 <a href="{{ route('partners') }}" class="dropdown-item white">Our Partners </a>
                             </div>
                         </div>
-                        <a href="causes.html" class="nav-item nav-link">Causes</a>
-                        <a href="event.html" class="nav-item nav-link">Events</a>
+                        <!--<a href="causes.html" class="nav-item nav-link">Causes</a>
+                        <a href="event.html" class="nav-item nav-link">Events</a>-->
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Careers</a>
+                            <a href="{{ route('pages.careers') }}" class="nav-link dropdown-toggle" data-toggle="dropdown">Careers</a>
                             <div class="dropdown-menu">
                                 <a href="single.html" class="dropdown-item white">Jobs</a>
 
                                 <a href="{{ route('partners') }}" class="dropdown-item white">Partner With Us</a>
 
                                 <a href="{{route('volunteer')}}" class="dropdown-item white">Become A Volunteer</a>
-                                <a href="donate.html" class="dropdown-item white">Donate Now</a>
+                                <a href="{{ route('volunteer') }}" class="dropdown-item white">Donate Now</a>
                             </div>
                         </div>
                         <a href="{{ route('focusareas') }}" class="nav-item nav-link">Our Focus Areas</a>
@@ -112,7 +112,7 @@
                                 <a href="{{ route('centers.wcc') }}" class="dropdown-item white">Working Children Center</a>
                                 <a href="{{ route('centers.trc') }}" class="dropdown-item white">Temporary Rescue Center</a>
                                 <a href="{{ route('centers.sfp') }}" class="dropdown-item white">School Feeding Programme</a>
-                                <a href="donate.html" class="dropdown-item white">Donate</a>
+                                <a href="{{ route('donation.form') }}" class="dropdown-item white">Donate</a>
 
                             </div>
                         </div>

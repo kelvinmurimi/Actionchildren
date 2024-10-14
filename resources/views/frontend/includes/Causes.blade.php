@@ -28,7 +28,7 @@
                 </div>
                 <div class="causes-btn">
                     <a href="{{ route('centers.trc') }}" class="btn btn-custom">Learn More</a>
-                    <a href="" class="btn btn-custom">Donate Now</a>
+                    <a href="{{ route('donation.form') }}" class="btn btn-custom">Donate Now</a>
                 </div>
             </div>
             <div class="causes-item">
@@ -51,8 +51,8 @@
                     <p>  Increase the number of enrollment of children in pre-primary, primary and secondary schools.</p>
                 </div>
                 <div class="causes-btn">
-                    <a href="" class="btn btn-custom">Learn More</a>
-                    <a href="" class="btn btn-custom">Donate Now</a>
+                    <a href="{{ route('donation.form') }}" class="btn btn-custom">Learn More</a>
+                    <a href="{{ route('donation.form') }}" class="btn btn-custom">Donate Now</a>
                 </div>
             </div>
             <div class="causes-item">
@@ -75,8 +75,8 @@
                     <p>Increase the number of enrollment of children in pre-primary, primary and secondary schools</p>
                 </div>
                 <div class="causes-btn">
-                    <a href="" class="btn btn-custom">Learn More</a>
-                    <a href="" class="btn btn-custom">Donate Now</a>
+                    <a href="{{ route('donation.form') }}" class="btn btn-custom">Learn More</a>
+                    <a href="{{ route('donation.form') }}" class="btn btn-custom">Donate Now</a>
                 </div>
             </div>
             <div class="causes-item">

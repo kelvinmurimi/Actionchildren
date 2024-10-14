@@ -6,6 +6,8 @@ namespace App\Http\Controllers\Pages;
 
 use App\Http\Requests\ContactFormRequest;
 use App\Http\Requests\VolunteerFormRequest;
+use App\Http\Requests\DonationFormRequest;
+use App\Http\Requests\VFest;
 use App\Models\Contact;
 use App\Models\Staff;
 use App\Models\Partner;
@@ -13,6 +15,7 @@ use App\Models\Partner;
 use App\Models\Article;
 use App\Http\Controllers\Controller;
 use App\Models\Category;
+use App\Models\Donation;
 
 class PagesController extends Controller
 {
@@ -147,5 +150,33 @@ class PagesController extends Controller
             'content' => $req->name,
         ]);
         return redirect(route('volunteer'))->with('success', 'message delivered successfully,we will be in touch soon');
+   }
+
+   //donation
+
+   public function donationform(){
+    $title = "Donate ";
+
+
+    return view('frontend.pages.donationform',[
+        'title'=>$title,
+    ]);
+   }
+   public function donate(DonationFormRequest $req){
+    $title = "Donate ";
+
+    Donation::create([
+            'name' => $req->name,
+            'phone' => $req->phone,
+            'email' => $req->email,
+
+        ]);
+    return redirect(route('donation'))->with('success', 'thank you');
+   }
+   public function paypaldonation(){
+     $title='paypal donation';
+    return view('frontend.pages.donation',[
+        'title'=>$title,
+    ]);
    }
 }

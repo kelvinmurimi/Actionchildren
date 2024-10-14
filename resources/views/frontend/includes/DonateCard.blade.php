@@ -18,12 +18,29 @@
                     </div>
                     <div class="col-lg-5">
                         <div class="donate-form">
-                            <form>
+                            <form action="{{ route('donation.data') }}"  method="POST">
+                                @csrf
                                 <div class="control-group">
-                                    <input type="text" class="form-control" placeholder="Name" required="required" />
+                                    <input type="text" class="form-control" placeholder="Name" name="name"
+                                    />
+                                    @error('name')
+                                    <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+
                                 </div>
                                 <div class="control-group">
-                                    <input type="email" class="form-control" placeholder="Email" required="required" />
+                                    <input type="text" class="form-control" placeholder="Name" name="phone"
+                                    />
+                                    @error('phone')
+                                    <span class="text-danger">{{ $message }}</span>
+                                    @enderror
+
+                                </div>
+                                <div class="control-group">
+                                    <input type="email" class="form-control" placeholder="Email"  name="email"/>
+                                    @error('email')
+                                    <span class="text-danger">{{ $message }}</span>
+                                    @enderror
                                 </div>
 
                                 <div>

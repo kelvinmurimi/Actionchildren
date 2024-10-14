@@ -31,3 +31,7 @@ Route::get('/Afcic/rehabilitation', [FocusAreasController::class, 'rehab'])->nam
 Route::get('/Afcic/education-empowerment', [FocusAreasController::class, 'education'])->name('focus.education');
 Route::get('/Afcic/safe-climate', [FocusAreasController::class, 'climate'])->name('focus.climate');
 Route::get('/Afcic/legal-aid-and-advocacy', [FocusAreasController::class, 'legal'])->name('focus.legal');
+//donate
+Route::get('/Afcic/donation/form', [PagesController::class, 'donationform'])->name('donation.form');
+Route::get('/Afcic/donation', [PagesController::class, 'paypaldonation'])->name('donation');
+Route::post('/Afcic/donation/data', [PagesController::class, 'donate'])->name('donation.data');
