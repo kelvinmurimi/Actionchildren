@@ -26,13 +26,14 @@
 
                             <div class="tab-content">
                                 <div id="tab-content-1" class="container tab-pane active">
-                                    <strong>Action for Children in Conflict is dedicated to the improvement of the lives of vulnerable children, women and communities by promoting their access to quality education, health, food, safe and clean environment, economic empowerment and the protection of their rights and fundamental freedoms.</strong>
+                                    <strong> <b class="text-primary">Action for Children in Conflict(AFIC)</b> is dedicated to the improvement of the lives of vulnerable children, women and communities by promoting their access to quality education, health, food, safe and clean environment, economic empowerment and the protection of their rights and fundamental freedoms.</strong>
                                     <div>
                                         <a href="{{ route('pages.about') }}" class="btn btn-primary ">Learn More  About Us</a>
                                     </div>
                                 </div>
                                 <div id="tab-content-2" class="container tab-pane fade">
                                     <b>
+                                    
                                         Enhance and support the growth and development of children, young people and their families by facilitating access to justice, education, health, and their psychosocial and economic support. Putting communities at the center and fostering their growth through fair and sustainable opportunities.
                                     </b>
                                     <div>

@@ -15,7 +15,7 @@ class PartnersController extends Controller
     {
         //
         $title='Partners';
-        $partners=Partner::latest()->paginate(5);
+        $partners=partner::latest()->paginate(5);
         return view('admin.partners.index',[
             'title'=>$title,
             'partners'=>$partners
