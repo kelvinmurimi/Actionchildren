@@ -6,7 +6,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\partners\CreatePartnersRequest;
 use App\Http\Requests\partners\UpdatePartnersRequest;
-use App\models\Partner;
+use App\Models\Partner;
 use Illuminate\Http\Request;
 
 class PartnersController extends Controller
