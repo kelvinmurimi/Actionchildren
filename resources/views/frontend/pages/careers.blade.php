@@ -5,7 +5,7 @@
 </div>
 
 <div class="text-primary">
-    for more information contact us  <a href="{{ route('pages.contact') }}"  rel="noopener noreferrer"></a> 
+    for more information contact us  <a href="{{ route('contact) }}"  rel="noopener noreferrer"></a> 
 </div>
 
 @endsection
