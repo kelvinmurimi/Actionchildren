@@ -169,11 +169,11 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <div class="footer-newsletter">
-                            <h2>Newsletter</h2>
+                        <div class="donate-form">
+                            <h2 class="white">Newsletter</h2>
                             <form>
-                                <input class="form-control" placeholder="Email goes here">
-                                <button class="btn btn-custom">Submit</button>
+                                <input class="form-control pb-2" placeholder="Email goes here">
+                                <button class="btn btn-custom primary">Submit</button>
                                 <label  style="color:#fff;">Don't worry, we don't spam!</label>
                             </form>
                         </div>

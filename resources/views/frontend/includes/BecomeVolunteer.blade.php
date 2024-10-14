@@ -44,7 +44,9 @@
                     </div>
                     <div class="volunteer-text">
                         <p>
-                            Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non. Aliquam metus tortor, auctor id gravida, viverra quis sem. Curabitur non nisl nec nisi maximus. Aenean convallis porttitor. Aliquam interdum at lacus non blandit.
+                            Whether you have skills to share, resources to offer, or simply a passion for helping others, your involvement is priceless. Together, we can amplify our impact, Your donation will enable us rescue more children from the streets, rehabilitate them at our Temporary Rescue Centre where they are provided basic needs and are finally reintegrated into the society. .
+
+                            Take the first step—fill out our partnership/volunteer form today! Let’s work together to create lasting change in our communities.
                         </p>
                     </div>
                 </div>

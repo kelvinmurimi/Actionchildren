@@ -11,7 +11,7 @@
                             </div>
                             <div class="donate-text">
                                 <p>
-                                    Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non. Aliquam metus tortor, auctor id gravida, viverra quis sem. Curabitur non nisl nec nisi maximus. Aenean convallis porttitor. Aliquam interdum at lacus non blandit.
+                                    Your support has the power to change lives. By donating today, you help provide crucial rehabilitation, economic opportunities, and access to justice for support, growth and development of children, young people and their families by facilitating access to justice, education, health, and their psychosocial and economic support. Every contribution, no matter the size, brings us one step closer to a brighter future for vulnerable women and children.
                                 </p>
                             </div>
                         </div>
