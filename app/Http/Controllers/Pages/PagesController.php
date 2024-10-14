@@ -179,4 +179,11 @@ class PagesController extends Controller
         'title'=>$title,
     ]);
    }
+   public function careers(){
+     $title='Available Jobs';
+    return view('frontend.pages.careers',[
+        'title'=>$title,
+    ]);
+   }
+
 }
