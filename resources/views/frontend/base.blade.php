@@ -96,12 +96,12 @@
                         <div class="nav-item dropdown">
                             <a href="{{ route('pages.careers') }}" class="nav-link dropdown-toggle" data-toggle="dropdown">Careers</a>
                             <div class="dropdown-menu">
-                                <a href="single.html" class="dropdown-item white">Jobs</a>
+                                <a href="{{ route('pages.careers') }}" class="dropdown-item white">Jobs</a>
 
                                 <a href="{{ route('partners') }}" class="dropdown-item white">Partner With Us</a>
 
                                 <a href="{{route('volunteer')}}" class="dropdown-item white">Become A Volunteer</a>
-                                <a href="{{ route('volunteer') }}" class="dropdown-item white">Donate Now</a>
+                                <a href="{{ route('donation.form') }}" class="dropdown-item white">Donate Now</a>
                             </div>
                         </div>
                         <a href="{{ route('focusareas') }}" class="nav-item nav-link">Our Focus Areas</a>

@@ -22,7 +22,7 @@
                 <h2>Contact Us For Any Query</h2>
             </div>
             <div class="contact-img">
-                <img src="{{ asset('frontend/ui/img/contact.jpg') }}" alt="Image">
+                <img src="{{ asset('media/contact.jpg') }}" alt="Image">
             </div>
             <div class="contact-form">
                 <div id="success"></div>

@@ -3,7 +3,7 @@
     <div class="container">
         <div class="section-header text-center">
             <p>Meet Our Team</p>
-            <h2>AMeet the Passionate People Behind Our Mission
+            <h2>Meet the Passionate People Behind Our Mission
             </h2>
         </div>
         <div class="row">
