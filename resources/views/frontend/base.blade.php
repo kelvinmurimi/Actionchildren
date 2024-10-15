@@ -118,7 +118,7 @@
                         </div>
                         <a href="{{ route('blog') }}" class="nav-item nav-link">Blog</a>
                         <a href="{{ route('contact') }}" class="nav-item nav-link">Contact</a>
-                        
+
                     </div>
                 </div>
             </div>
@@ -152,20 +152,20 @@
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-link">
                             <h2>Popular Links</h2>
-                            <a href="">About Us</a>
-                            <a href="">Contact Us</a>
-                            <a href="">Popular Causes</a>
-                            <a href="">Upcoming Events</a>
-                            <a href="">Latest Blog</a>
+                            <a href="{{ route('pages.about') }}">About Us</a>
+                            <a href="{{ route('contact') }}">Contact Us</a>
+                            <a href="{{ route('blog') }}">Popular Causes</a>
+                            <a href="{{ route('blog') }}">Upcoming Events</a>
+                            <a href="{{ route('blog') }}">Latest Blog</a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-link">
                             <h2>Useful Links</h2>
-                            <a href="">Terms of use</a>
-                            <a href="">Privacy policy</a>
+                            <a href="{{ route('partners') }}">Our Partners</a>
+                            <a href="{{ route('centers.trc') }}">Our Centere</a>
                             <a href="">Cookies</a>
-                            <a href="">Help</a>
+                            <a href="{{ route('contact') }}">Help</a>
                             <a href="">FQAs</a>
                         </div>
                     </div>
