@@ -4,7 +4,7 @@
         <div class="owl-carousel">
             <div class="carousel-item">
                 <div class="carousel-img">
-                    <img src="{{ asset('slider/slider1.jpg') }}" alt="Image">
+                    <img src="{{ asset('updates/slider1w.jpg') }}" alt="Image">
                 </div>
                 <div class="carousel-text">
                     <h1>Who we are</h1>
@@ -19,7 +19,7 @@
             </div>
             <div class="carousel-item">
                 <div class="carousel-img">
-                    <img src="{{ asset('slider/slider2.jpg') }}" alt="Image">
+                    <img src="{{ asset('frontend/slider/up.jpg') }}" alt="Image">
                 </div>
                 <div class="carousel-text">
                     <h1>What We Do</h1>
@@ -34,7 +34,7 @@
             </div>
             <div class="carousel-item">
                 <div class="carousel-img">
-                    <img src="{{ asset('slider/slider3.jpg') }}" alt="Image">
+                    <img src="{{ asset('updates/slider3.jpg') }}" alt="Image">
                 </div>
                 <div class="carousel-text">
                     <h1>Why we do it</h1>

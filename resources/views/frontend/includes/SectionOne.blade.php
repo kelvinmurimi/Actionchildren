@@ -44,6 +44,14 @@
                                     Our programs focus on the following outcomes: rehabilitation and reintegration, economic empowerment, access to justice, education empowerment and climate change and safe environment.  The programs are all connected and essential to ending the cycle of poverty.
                                     <div>
                                         <a href="{{ route('focusareas') }}" class="btn btn-primary ">Our Focus Areas</a>
+                                        <form action="https://www.paypal.com/donate" method="post" target="_top ">
+                                            <input type="hidden" name="hosted_button_id" value="LU7GDTJZH7NLG" />
+                                            <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+                                                border="0" name="submit"  class="paypal-button"  title="PayPal - The safer, easier way to pay online!"
+                                                alt="Donate with PayPal button" />
+                                            <img alt="" border="0" src="https://www.paypal.com/en_KE/i/scr/pixel.gif" width="1"
+                                                height="1" />
+                                        </form>
                                     </div>
                                 </div>
                             </div>

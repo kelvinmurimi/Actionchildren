@@ -29,7 +29,7 @@
 
                                 </div>
                                 <div class="control-group">
-                                    <input type="text" class="form-control" placeholder="Name" name="phone"
+                                    <input type="text" class="form-control" placeholder="phone" name="phone"
                                     />
                                     @error('phone')
                                     <span class="text-danger">{{ $message }}</span>

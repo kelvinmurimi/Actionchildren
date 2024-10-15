@@ -118,6 +118,7 @@
                         </div>
                         <a href="{{ route('blog') }}" class="nav-item nav-link">Blog</a>
                         <a href="{{ route('contact') }}" class="nav-item nav-link">Contact</a>
+                        
                     </div>
                 </div>
             </div>
