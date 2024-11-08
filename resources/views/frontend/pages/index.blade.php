@@ -7,7 +7,7 @@
     @include('frontend.includes.DonateCard')
     @include('frontend.includes.BecomeVolunteer')
 
-    @include('frontend.includes.HomeTeam')
+    @include('frontend.includes.teamcard')
     @include('frontend.includes.focusareas')
     @include('frontend.includes.Causes')
 @endsection

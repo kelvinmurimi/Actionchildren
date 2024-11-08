@@ -2,6 +2,11 @@
 
 @section('content')
 @include('frontend.includes.banner')
+ @include('frontend.includes.partners')
+                @include('frontend.includes.BecomeVolunteer')
+
+@endsection
+@section('name')
 
 
 
@@ -40,5 +45,4 @@
                     </div>
                 </div>
                 <!-- Blog End -->
-                @include('frontend.includes.BecomeVolunteer')
 @endsection
