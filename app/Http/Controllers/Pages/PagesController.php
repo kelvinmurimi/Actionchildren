@@ -11,7 +11,7 @@ use App\Http\Requests\VFest;
 use App\Models\Contact;
 use App\Models\Staff;
 use App\Models\Partner;
-
+use App\Models\Career;
 use App\Models\Article;
 use App\Http\Controllers\Controller;
 use App\Models\Category;
@@ -135,13 +135,15 @@ class PagesController extends Controller
         ]);
     }
 
-    public function volunteerToday(){
-         $title = "Volunteer Thika";
-        return view('frontend.pages.volunteer',[
-            'title'=>$title,
+    public function volunteerToday()
+    {
+        $title = "Volunteer Thika";
+        return view('frontend.pages.volunteer', [
+            'title' => $title,
         ]);
     }
-    public function volunteerDetails(VolunteerFormRequest $req){
+    public function volunteerDetails(VolunteerFormRequest $req)
+    {
         $req->validated();
         Contact::create([
             'name' => $req->name,
@@ -150,40 +152,61 @@ class PagesController extends Controller
             'content' => $req->name,
         ]);
         return redirect(route('volunteer'))->with('success', 'message delivered successfully,we will be in touch soon');
-   }
+    }
 
-   //donation
+    //donation
 
-   public function donationform(){
-    $title = "Donate ";
+    public function donationform()
+    {
+        $title = "Donate ";
 
 
-    return view('frontend.pages.donationform',[
-        'title'=>$title,
-    ]);
-   }
-   public function donate(DonationFormRequest $req){
-    $title = "Donate ";
+        return view('frontend.pages.donationform', [
+            'title' => $title,
+        ]);
+    }
+    public function donate(DonationFormRequest $req)
+    {
+        $title = "Donate ";
 
-    Donation::create([
+        Donation::create([
             'name' => $req->name,
             'phone' => $req->phone,
             'email' => $req->email,
 
         ]);
-    return redirect(route('donation'))->with('success', 'thank you');
-   }
-   public function paypaldonation(){
-     $title='paypal donation';
-    return view('frontend.pages.donation',[
-        'title'=>$title,
-    ]);
-   }
-   public function careers(){
-     $title='Available Jobs';
-    return view('frontend.pages.careers',[
-        'title'=>$title,
-    ]);
-   }
+        return redirect(route('donation'))->with('success', 'thank you');
+    }
+    public function paypaldonation()
+    {
+        $title = 'paypal donation';
+        return view('frontend.pages.donation', [
+            'title' => $title,
+        ]);
+    }
+    public function careers()
+    {
+        $title = 'Available Jobs';
+        $careers = Career::latest()->paginate(6);
+        return view('frontend.pages.careers', [
+            'title' => $title,
+            'careers' => $careers
+        ]);
+    }
+    public function careersDetails($id)
+    {
+        $title = 'Job Details';
+        $career = Career::findOrFail($id);
+        $youngfriends = Staff::where('department', 'young')->latest()->paginate(4);
 
+        $partners = Partner::latest()->paginate(5);
+        $articles = Article::latest()->paginate(6);
+        return view('frontend.careers.show', [
+            'title' => $title,
+            'job' => $career,
+            'partners' => $partners,
+            'youngfriends' => $youngfriends,
+            'articles' => $articles,
+        ]);
+    }
 }

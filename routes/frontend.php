@@ -9,6 +9,7 @@ use App\Http\Controllers\FocusAreasController;
 Route::get('/', [PagesController::class, 'index'])->name('pages.index');
 Route::get('/Afcic-partners', [PagesController::class, 'ourPartners'])->name('partners');
 Route::get('/careers', [PagesController::class, 'careers'])->name('pages.careers');
+Route::get('/careers/{id}/details', [PagesController::class, 'careersDetails'])->name('careers.show');
 Route::get('/About-Us', [PagesController::class, 'aboutAfcic'])->name('pages.about');
 Route::get('/info/Contact', [PagesController::class, 'contactPage'])->name('contact');
 Route::post('/afcic/Contact', [PagesController::class, 'sendContactInfo'])->name('contact.send');

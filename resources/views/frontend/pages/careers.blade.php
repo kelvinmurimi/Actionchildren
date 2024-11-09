@@ -1,13 +1,37 @@
 @extends('frontend.base')
 @section('content')
 @include('frontend.includes.banner')
-<div class="alert alert-success">
-    please visit later this page is  currently under maintainance.
-</div>
+    <!-- Blog Start -->
+    <div class="blog">
+        <div class="container">
+            <div class="section-header text-center">
+                <p>Available Jobs And Tenders</p>
 
-<div class="text-primary">
-    for more information contact us  <a href="{{ route('contact') }}"  rel="noopener noreferrer"></a> 
-</div>
+            </div>
+            <div class="row">
+                @foreach ($careers as $job)
+                    <div class="col-lg-4">
+                    <div class="blog-item">
+
+                        <div class="blog-text">
+                            <h3><a href="#">{{ $job->title }}</a></h3>
+                            <p>
+                               {{ Str::limit($job->description, 100, '...') }}
+                            </p>
+                        </div>
+                        <div class="blog-meta">
+                            <p><a href="{{ route('careers.show',$job->id) }}" class="btn btn-primary"><i class="fa fa-arrow-right"></i>Details</a></p>
+
+                        </div>
+                    </div>
+                </div>
+                @endforeach
+
+
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
 
 @endsection
 
