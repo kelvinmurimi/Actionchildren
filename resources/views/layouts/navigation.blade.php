@@ -62,6 +62,21 @@
 @can('view_users')
     <x-nav.link route="admin.staffs.index" icon="fas fa-user" wire:navigate>Staff</x-nav.link>
 @endcan
+
+@if(can('view_system_settings') || can('view_roles') || can('view_audit_trails') || can('view_sent_emails'))
+    <x-nav.group label="Emails" route="admin.settings" icon="fa fa-envelope-square">
+        @can('view_audit_trails')
+            <x-nav.group-item route="admin.contacts.index" icon="fas fa-toggle-on" wire:navigate>Contact</x-nav.group-item>
+        @endcan
+
+
+
+
+    </x-nav.group>
+@endif
+
+
+
 @if(can('view_system_settings') || can('view_roles') || can('view_audit_trails') || can('view_sent_emails'))
     <x-nav.group label="Blog" route="admin.settings" icon="fas fa-toggle-on">
         @can('view_audit_trails')

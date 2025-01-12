@@ -12,7 +12,7 @@ use App\Livewire\Admin\Users\ShowUser;
 use App\Livewire\Admin\Users\Users;
 use App\Http\Controllers\ArticlesController;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\dashboard\AdminContactController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -46,6 +46,17 @@ Route::prefix(config('admintw.prefix'))->middleware(['auth', 'activeUser', 'IpCh
         Route::get('{user}/edit', EditUser::class)->name('admin.users.edit');
         Route::get('{user}', ShowUser::class)->name('admin.users.show');
     });
+ // backend general routes
+    Route::prefix('Emails')->group(function () {
+
+    Route::get('/contact', [AdminContactController::class, 'index'])->name('admin.contacts.index');
+    Route::get('/contact/{id}/details', [AdminContactController::class, 'contactdetails'])->name('admin.contacts.show');
+    //partners data
+     Route::get('/partners/data', [AdminContactController::class, 'partnersindex'])->name('admin.partners.data');
+     
+    Route::get('/partnersdata/{id}/details', [AdminContactController::class, 'partnersdetails'])->name('admin.partners.showdata');
+
+   });
     require __DIR__.'/blog.php';
     require __DIR__.'/career.php';
     require __DIR__.'/partners.php';
