@@ -90,3 +90,7 @@
 
     </x-nav.group>
 @endif
+
+@can('view_users')
+    <x-nav.link route="admin.projects.index" icon="fa fa-sort-amount-desc" wire:navigate>Projects</x-nav.link>
+@endcan

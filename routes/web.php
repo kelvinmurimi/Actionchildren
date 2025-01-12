@@ -53,7 +53,7 @@ Route::prefix(config('admintw.prefix'))->middleware(['auth', 'activeUser', 'IpCh
     Route::get('/contact/{id}/details', [AdminContactController::class, 'contactdetails'])->name('admin.contacts.show');
     //partners data
      Route::get('/partners/data', [AdminContactController::class, 'partnersindex'])->name('admin.partners.data');
-     
+
     Route::get('/partnersdata/{id}/details', [AdminContactController::class, 'partnersdetails'])->name('admin.partners.showdata');
 
    });
@@ -61,6 +61,7 @@ Route::prefix(config('admintw.prefix'))->middleware(['auth', 'activeUser', 'IpCh
     require __DIR__.'/career.php';
     require __DIR__.'/partners.php';
     require __DIR__.'/staff.php';
+    require __DIR__.'/project.php';
 
 });
 //public articles/blog
