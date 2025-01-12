@@ -11,4 +11,12 @@ class Project extends Model
     use HasFactory;
 
     protected $fillable = ['title','details','description','image','slug'];
+
+     //make slug default instead of id
+    
+    /***
+      public function getRouteKeyName(){
+          return 'slug';
+      }
+        */
 }

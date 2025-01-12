@@ -15,10 +15,11 @@
             <div class="card-body">
               <h4 class="card-title">{{ $project->title }}</h4>
               <p class="card-text">{{Str::limit($project->description , 100, '....') }}</p>
-              <a href="{{ route('projects.show',$project->slug) }}" class="btn btn-outline-primary">View Details</a>
+              <a href="{{ route('projects.show',$project->id) }}" class="btn btn-outline-primary">View Details</a>
             </div>
           </div>
         @endforeach
+        {{ $projects->links('pagination::bootstrap-4') }}
         
        <!-- <div class="card">
           <div class="card-img-body">

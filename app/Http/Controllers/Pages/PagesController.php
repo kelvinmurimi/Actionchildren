@@ -224,11 +224,11 @@ class PagesController extends Controller
         ]);
     }
 
-    public function projectDetail($slug)
+    public function projectDetail($id)
     {
-      //  dd('tst ok');
+          // dd($slug);
         $title = 'Project  Details';
-        $project = Project::findOrFail($slug);
+        $project = Project::findOrFail($id);
         $youngfriends = Staff::where('department', 'young')->latest()->paginate(4);
 
         $partners = Partner::latest()->paginate(5);
