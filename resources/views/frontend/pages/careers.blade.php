@@ -14,7 +14,7 @@
                     <div class="blog-item">
 
                         <div class="blog-text">
-                            <h3><a href="#">{{ $job->title }}</a></h3>
+                            <h3><a href="{{ route('careers.show',$job->id) }}">{{ $job->title }}</a></h3>
                             <p>
                                {{ Str::limit($job->description, 100, '...') }}
                             </p>

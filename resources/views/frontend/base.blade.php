@@ -116,8 +116,17 @@
                                 <a href="{{ route('donation.form') }}" class="dropdown-item white">Donate Now</a>
                             </div>
                         </div>
-                        <a href="{{ route('focusareas') }}" class="nav-item nav-link">Our Focus Areas</a>
 
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Our Focus Areas</a>
+                            <div class="dropdown-menu">
+                                <a href="{{ route('centers.wcc') }}" class="dropdown-item white">Focus Areas</a>
+                                <a href="{{ route('centers.trc') }}" class="dropdown-item white">Projects</a>
+                                <a href="{{ route('centers.sfp') }}" class="dropdown-item white">Programmes</a>
+                                <a href="{{ route('donation.form') }}" class="dropdown-item white">Events</a>
+
+                            </div>
+                        </div>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Our Centers</a>
                             <div class="dropdown-menu">
