@@ -20,7 +20,9 @@ use App\Models\Project;
 
 class PagesController extends Controller
 {
-    //
+    /*
+    This Controller Displays Most Of Frontend Interface
+     */
     //Home Page
     public function index()
     {
@@ -216,10 +218,34 @@ class PagesController extends Controller
     {
         $title = 'Our Projects';
         $projects = Project::latest()->paginate(6);
-        return view('frontend.pages.projects', [
+        return view('frontend.pages.projects.index', [
             'title' => $title,
             'projects' => $projects
         ]);
     }
+
+    public function projectDetails($slug)
+    {
+        $title = 'Project  Details';
+        $project = Project::findOrFail($slug);
+        $youngfriends = Staff::where('department', 'young')->latest()->paginate(4);
+
+        $partners = Partner::latest()->paginate(5);
+        $articles = Article::latest()->paginate(6);
+        return view('frontend.pages.projects.show', [
+            'title' => $title,
+            'project' => $project,
+            'partners' => $partners,
+            'youngfriends' => $youngfriends,
+            'articles' => $articles,
+        ]);
+    }
+
+
+
+    
+/**end of functions
+ 
+ */
 
 }

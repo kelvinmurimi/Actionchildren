@@ -42,3 +42,4 @@ Route::post('/Afcic/donation/data', [PagesController::class, 'donate'])->name('d
 
 //Projects
 Route::get('/Afcic/projects/info', [PagesController::class, 'projects'])->name('projects.index');
+Route::get('/Afcic/projects/{slug}/details', [PagesController::class, 'projectDetail'])->name('projects.show');
