@@ -91,7 +91,9 @@
 
                 <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                     <div class="navbar-nav ml-auto">
+                         <!-- // Home Page-->
                         <a href="/" class="nav-item nav-link active">Home</a>
+                          <!-- // About Afcic-->
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About Us</a>
                             <div class="dropdown-menu">
@@ -103,8 +105,19 @@
                                 <a href="{{ route('partners') }}" class="dropdown-item white">Our Partners </a>
                             </div>
                         </div>
-                        <!--<a href="causes.html" class="nav-item nav-link">Causes</a>
-                        <a href="event.html" class="nav-item nav-link">Events</a>-->
+                          <!-- // Donation Causes -->
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Donation Causes</a>
+                            <div class="dropdown-menu">
+                               
+                                <a href="{{ route('projects.index') }}" class="dropdown-item white">Our Projects</a>
+                                <a href="{{ route('centers.sfp') }}" class="dropdown-item white">Our Programmes</a>
+                                <a href="{{ route('focusareas') }}" class="dropdown-item white">Our Focus Areas</a>
+                                <a href="{{ route('donation.form') }}" class="dropdown-item white">Events</a>
+
+                            </div>
+                        </div>
+                         <!-- // Careers-->
                         <div class="nav-item dropdown">
                             <a href="{{ route('pages.careers') }}" class="nav-link dropdown-toggle" data-toggle="dropdown">Careers</a>
                             <div class="dropdown-menu">
@@ -117,16 +130,7 @@
                             </div>
                         </div>
 
-                        <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Our Focus Areas</a>
-                            <div class="dropdown-menu">
-                                <a href="{{ route('centers.wcc') }}" class="dropdown-item white">Focus Areas</a>
-                                <a href="{{ route('centers.trc') }}" class="dropdown-item white">Projects</a>
-                                <a href="{{ route('centers.sfp') }}" class="dropdown-item white">Programmes</a>
-                                <a href="{{ route('donation.form') }}" class="dropdown-item white">Events</a>
-
-                            </div>
-                        </div>
+                          <!-- // Centers-->
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Our Centers</a>
                             <div class="dropdown-menu">
@@ -137,6 +141,7 @@
 
                             </div>
                         </div>
+                          <!-- // Blog Contact-->
                         <a href="{{ route('blog') }}" class="nav-item nav-link">Blog</a>
                         <a href="{{ route('contact') }}" class="nav-item nav-link">Contact</a>
 

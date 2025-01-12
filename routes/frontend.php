@@ -5,6 +5,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Pages\PagesController;
 use App\Http\Controllers\CentersController;
 use App\Http\Controllers\FocusAreasController;
+use App\Http\Controllers\ProjectController;
+
+
 
 Route::get('/', [PagesController::class, 'index'])->name('pages.index');
 Route::get('/Afcic-partners', [PagesController::class, 'ourPartners'])->name('partners');
@@ -36,3 +39,6 @@ Route::get('/Afcic/legal-aid-and-advocacy', [FocusAreasController::class, 'legal
 Route::get('/Afcic/donation/form', [PagesController::class, 'donationform'])->name('donation.form');
 Route::get('/Afcic/donation', [PagesController::class, 'paypaldonation'])->name('donation');
 Route::post('/Afcic/donation/data', [PagesController::class, 'donate'])->name('donation.data');
+
+//Projects
+Route::get('/Afcic/projects/info', [PagesController::class, 'projects'])->name('projects.index');
