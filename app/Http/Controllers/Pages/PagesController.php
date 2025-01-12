@@ -16,6 +16,7 @@ use App\Models\Article;
 use App\Http\Controllers\Controller;
 use App\Models\Category;
 use App\Models\Donation;
+use App\Models\Project;
 
 class PagesController extends Controller
 {
@@ -209,4 +210,16 @@ class PagesController extends Controller
             'articles' => $articles,
         ]);
     }
+
+    //projects
+    public function projects()
+    {
+        $title = 'Our Projects';
+        $projects = Project::latest()->paginate(6);
+        return view('frontend.pages.projects', [
+            'title' => $title,
+            'projects' => $projects
+        ]);
+    }
+
 }

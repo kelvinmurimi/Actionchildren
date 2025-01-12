@@ -10,13 +10,17 @@ class UpdateProjectRequest extends FormRequest
 {
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     public function rules()
     {
         return [
             //
+            'title'=>['required'],
+            'details'=>['required'],
+            'description'=>['required'],
+            'image'=>['required','mimes:jpg,png,jpeg','max:5048'],
         ];
     }
 }
