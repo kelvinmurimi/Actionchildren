@@ -224,8 +224,9 @@ class PagesController extends Controller
         ]);
     }
 
-    public function projectDetails($slug)
+    public function projectDetail($slug)
     {
+      //  dd('tst ok');
         $title = 'Project  Details';
         $project = Project::findOrFail($slug);
         $youngfriends = Staff::where('department', 'young')->latest()->paginate(4);
