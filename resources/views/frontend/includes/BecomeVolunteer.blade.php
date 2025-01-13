@@ -25,7 +25,7 @@
                         @enderror
                         </div>
                         <div class="control-group">
-                            <textarea class="form-control" name="content" placeholder="Why you want to become a volunteer?" ></textarea>
+                            <textarea class="form-control" name="content" placeholder="Litle details About yourself" ></textarea>
                             @error('content')
                             <p class="help-block text-danger">{{ $message }}</p>
                         @enderror
@@ -39,14 +39,14 @@
             <div class="col-lg-7">
                 <div class="volunteer-content">
                     <div class="section-header">
-                        <p>Become A Volunteer| Partner With Us</p>
+                        <p>Become A Volunteer</p>
                         <h2> Let’s make a difference in the lives of Children</h2>
                     </div>
                     <div class="volunteer-text">
                         <p>
                             Whether you have skills to share, resources to offer, or simply a passion for helping others, your involvement is priceless. Together, we can amplify our impact, Your donation will enable us rescue more children from the streets, rehabilitate them at our Temporary Rescue Centre where they are provided basic needs and are finally reintegrated into the society. .
 
-                            Take the first step—fill out our partnership/volunteer form today! Let’s work together to create lasting change in our communities.
+                            Take the first step—fill out our volunteer form today! Let’s work together to create lasting change in our communities.
                         </p>
                     </div>
                 </div>

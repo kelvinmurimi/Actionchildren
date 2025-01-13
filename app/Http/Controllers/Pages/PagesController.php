@@ -17,6 +17,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Category;
 use App\Models\Donation;
 use App\Models\Project;
+use App\Models\Volunteer;
 
 class PagesController extends Controller
 {
@@ -148,7 +149,7 @@ class PagesController extends Controller
     public function volunteerDetails(VolunteerFormRequest $req)
     {
         $req->validated();
-        Contact::create([
+        Volunteer::create([
             'name' => $req->name,
             'phone' => $req->name,
             'email' => $req->name,
@@ -244,9 +245,9 @@ class PagesController extends Controller
 
 
 
-    
+
 /**end of functions
- 
+
  */
 
 }

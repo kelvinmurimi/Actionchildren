@@ -7,6 +7,7 @@ namespace App\Http\Controllers\dashboard;
 use App\Http\Controllers\Controller;
 use App\Models\Contact;
 use App\Models\Partner;
+use App\Models\Volunteer;
 use Illuminate\Http\Request;
 
 class AdminContactController extends Controller
@@ -50,6 +51,27 @@ class AdminContactController extends Controller
             'title'=>$title,
     ]);
     }
+///volunteers
+public function volunteerindex()
+{
+    $title='admin volunteers';
+    $volunteers = Volunteer::latest()->paginate(6);
+    return view('admin.volunteer.index', [
+        'volunteers' => $volunteers,
+        'title'=>$title,
+]);
+}
+
+public function volunteercontactdetails($id){
+
+    $title='admin volunteers';
+     $volunteer=Volunteer::findOrFail($id); 
+    return view('admin.volunteer.show', [
+        'volunteer' => $volunteer,
+        'title'=>$title,
+]);
+}
+
 
 
 

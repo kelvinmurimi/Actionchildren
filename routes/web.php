@@ -56,6 +56,10 @@ Route::prefix(config('admintw.prefix'))->middleware(['auth', 'activeUser', 'IpCh
 
     Route::get('/partnersdata/{id}/details', [AdminContactController::class, 'partnersdetails'])->name('admin.partners.showdata');
 
+// volunteer data 
+Route::get('/volunteer/contact', [AdminContactController::class, 'volunteerindex'])->name('admin.contacts.volunteerindex');
+Route::get('/volunteer/contact/{id}/details', [AdminContactController::class, 'volunteercontactdetails'])->name('admin.volunteercontacts.show');
+
    });
     require __DIR__.'/blog.php';
     require __DIR__.'/career.php';

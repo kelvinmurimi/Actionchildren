@@ -69,7 +69,9 @@
             <x-nav.group-item route="admin.contacts.index" icon="fas fa-toggle-on" wire:navigate>Contact</x-nav.group-item>
         @endcan
 
-
+@can('view_audit_trails')
+            <x-nav.group-item route="admin.contacts.volunteerindex" icon="fas fa-toggle-on" wire:navigate>Volunteers</x-nav.group-item>
+        @endcan
 
 
     </x-nav.group>
