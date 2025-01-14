@@ -28,7 +28,7 @@ class PagesController extends Controller
     public function index()
     {
         $title = "homepage";
-        $staff = Staff::latest()->paginate(4);
+        $staff = Staff::latest()->paginate(3);
         return view('frontend.pages.index', [
             'title' => $title,
             'staff' => $staff,
@@ -38,7 +38,7 @@ class PagesController extends Controller
     public function aboutAfcic()
     {
         $title = "About Us";
-        $staff = Staff::where('department', 'board')->latest()->paginate(4);
+        $staff = Staff::where('department', 'board')->latest()->paginate(3);
         return view('frontend.pages.about', [
             'title' => $title,
             'staff' => $staff,
@@ -71,7 +71,7 @@ class PagesController extends Controller
     public function teamAfcic()
     {
         $title = "Our Team";
-        $staff = Staff::latest()->paginate(6);
+        $staff = Staff::latest()->get();
         return view('frontend.pages.team', [
             'title' => $title,
             'staff' => $staff,

@@ -108,7 +108,7 @@
                     </div>
                     <div class="contentBx">
                        <h5>{{$team->name}}</h5>
-                       <strong>{{ $team->department }}</strong>
+                       <strong style="color:orange;">{{ $team->department }}</strong> <br>
                        {{ Str::limit($team->bio,100) }}
                        <a class="btn btn-primary" href="{{ route('team.show',$team->id) }}">About Me<i class="fa fa-arrow-right"></i></a>
                     </div>
@@ -118,5 +118,7 @@
             </div>
 
            @endforeach
+           <a class="btn btn-warning" href="{{ route('pages.team') }}">All Team<i class="fa fa-arrow-right"></i></a>
+
         </div>
         </div>
