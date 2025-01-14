@@ -1,5 +1,5 @@
 
-        <!-- About Start -->
+       {{---  <!-- About Start -->
         <div class="about">
             <div class="container">
                 <div class="row align-items-center">
@@ -33,7 +33,7 @@
                                 </div>
                                 <div id="tab-content-2" class="container tab-pane fade">
                                     <b>
-                                    
+
                                         Enhance and support the growth and development of children, young people and their families by facilitating access to justice, education, health, and their psychosocial and economic support. Putting communities at the center and fostering their growth through fair and sustainable opportunities.
                                     </b>
                                     <div>
@@ -60,4 +60,60 @@
                 </div>
             </div>
         </div>
-        <!-- About End -->
+        --}}
+        <!-- About 2 - Bootstrap Brain Component -->
+<section class="py-3 py-md-5">
+    <div class="container">
+      <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
+        <div class="col-12 col-lg-6">
+          <img class="img-fluid rounded" loading="lazy" src="{{ asset('slider/mission.jpg') }}" alt="About 2">
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="row justify-content-xl-center">
+            <div class="col-12 col-xl-10">
+              <h2 class="mb-3">MAKE A DIFFERENCE IN A CHILD'S LIFE</h2>
+              <p class="lead fs-4 mb-3 mb-xl-5">
+                <h5 class="blue">Our Mission</h5>
+                Enhance and support the growth and development of children, young people and their families by facilitating access to justice, education, health, and their psychosocial and economic support. Putting communities at the center and fostering their growth through fair and sustainable opportunities.
+                </p>
+                <p class="lead fs-4 mb-3 mb-xl-5">
+                    <h5 class="blue">About Us</h5>
+                 Action for Children in Conflict is dedicated to the improvement of the lives of vulnerable children, women and communities by promoting their access to quality education, health, food, safe and clean environment, economic empowerment and the protection of their rights and fundamental freedoms.
+                    </p>
+             {{--- <div class="d-flex align-items-center mb-3">
+                <div class="me-3 text-primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="fs-5 m-0">Our evolution procedure is super intelligent.</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center mb-3">
+                <div class="me-3 text-primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="fs-5 m-0">We deliver services beyond expectations.</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-center mb-4 mb-xl-5">
+                <div class="me-3 text-primary">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
+                  </svg>
+                </div>
+                <div>
+                  <p class="fs-5 m-0">Let's hire us to reach your objectives.</p>
+                </div>
+              </div>--}}
+              <a href="{{ route('pages.about') }}" class="btn bsb-btn-xl btn-outline-primary rounded-pill">More About Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
