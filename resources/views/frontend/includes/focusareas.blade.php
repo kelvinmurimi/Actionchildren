@@ -201,7 +201,7 @@
 
         <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
 
-          <p class="text-center">Our programs focus on the following outcomes: rehabilitation and reintegration economic empowerment, access to justice, education empowerment and climate change and safe environment. The programs are all connected and essential to ending the cycle of poverty.</p>
+          <p class="text-center">Our programs focuses on the following outcomes: rehabilitation and reintegration of street-connected children , economic empowerment, access to justice and legal aid, education empowerment and climate change and safe environment. The programs are all connected and essential to ending the cycle of poverty.</p>
           <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
         </div>
 
