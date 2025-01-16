@@ -197,6 +197,15 @@
 <!-- Blog 1 - Bootstrap Brain Component -->
 <section class="py-3 py-md-5">
     <h3 class="text-primary text-center">Our Focus Areas.</h3>
+    <div class="row justify-content-md-center">
+
+        <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
+
+          <p class="text-center">Our programs focus on the following outcomes: rehabilitation and reintegration economic empowerment, access to justice, education empowerment and climate change and safe environment. The programs are all connected and essential to ending the cycle of poverty.</p>
+          <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
+        </div>
+
+      </div>
     <div class="container overflow-hidden">
       <div class="row gy-5">
         <div class="col-12">

@@ -73,11 +73,14 @@
             <div class="col-12 col-xl-10">
               <h2 class="mb-3">MAKE A DIFFERENCE IN A CHILD'S LIFE</h2>
               <p class="lead fs-4 mb-3 mb-xl-5">
-                <h5 class="blue">Our Mission</h5>
-                Enhance and support the growth and development of children, young people and their families by facilitating access to justice, education, health, and their psychosocial and economic support. Putting communities at the center and fostering their growth through fair and sustainable opportunities.
+                <h5 class="text-primary">Our Mission</h5>
+                To enhance and support the growth and development of children, young people and their families by facilitating access to justice, education, health, and their psychosocial and economic support. Putting communities at the center and fostering their growth through fair and sustainable opportunities.
+                </p>
+                <h5 class="text-primary">Our Vision</h5>
+                A world of opportunities, equal and sustainable for every child.
                 </p>
                 <p class="lead fs-4 mb-3 mb-xl-5">
-                    <h5 class="blue">About Us</h5>
+                    <h5 class="text-primary">About Us</h5>
                  Action for Children in Conflict is dedicated to the improvement of the lives of vulnerable children, women and communities by promoting their access to quality education, health, food, safe and clean environment, economic empowerment and the protection of their rights and fundamental freedoms.
                     </p>
              {{--- <div class="d-flex align-items-center mb-3">

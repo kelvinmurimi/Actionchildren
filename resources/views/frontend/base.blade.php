@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/blogs/blog-1/assets/css/blog-1.css">
-
+<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/facts/fact-1/assets/css/fact-1.css">
 
     <!-- Favicon -->
     <link href="{{ asset('frontend/ui/img/main.jpg') }}" rel="icon">
@@ -122,7 +122,7 @@
             }
         }
     </style>
-    
+
     <style>
 /* For screens less than 600px wide */
 @media screen and (max-width: 600px) {
@@ -217,11 +217,11 @@
                     </div>
                     <!-- // Donation Causes -->
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Donation Causes</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Our Programs</a>
                         <div class="dropdown-menu">
 
                             <a href="{{ route('projects.index') }}" class="dropdown-item white">Our Projects</a>
-                            <a href="{{ route('centers.sfp') }}" class="dropdown-item white">Our Programmes</a>
+
                             <a href="{{ route('focusareas') }}" class="dropdown-item white">Our Focus Areas</a>
                             <a href="{{ route('donation.form') }}" class="dropdown-item white">Events</a>
 
