@@ -1,3 +1,4 @@
+{{-----
 <section id="projects">
 
     <div class="container">
@@ -191,4 +192,127 @@
 
     </div>
 
+  </section>
+---}}
+<!-- Blog 1 - Bootstrap Brain Component -->
+<section class="py-3 py-md-5">
+    <h3 class="text-primary text-center">Our Focus Areas.</h3>
+    <div class="container overflow-hidden">
+      <div class="row gy-5">
+        <div class="col-12">
+          <div class="row align-items-center gy-3 gy-md-0 gx-xl-5">
+            <div class="col-xs-12 col-md-6">
+              <div class="img-wrapper position-relative bsb-hover-push">
+                <a href="#!">
+                  <span class="badge rounded-pill text-bg-warning position-absolute top-0 start-0 m-3">Economic Empowerment</span>
+                  <img class="img-fluid rounded w-100 h-100 object-fit-cover" loading="lazy" src="{{asset('updates/climate/eco2.jpg')}}" alt="Sports">
+                </a>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div>
+                <p class="text-secondary mb-1"></p>
+                <h2 class="h1 mb-3"><a class="link-dark text-decoration-none" href="{{route('focus.economic')}}">Economic Empowerment</a></h2>
+                <p class="mb-4">
+                The AfCiC Economic Empowerment programme is designed to give people the tools to
+              be able to support themselves economically
+
+              Primarily, this part of our work is aimed not at children who live and work on the
+              streets, more at youths and families, those who have the capacity to work and to forge livelihoods
+              themselves.
+
+                </p>
+                <a class="btn btn-primary" href="{{route('focus.economic')}}" >Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="row align-items-center flex-row-reverse gy-3 gy-md-0 gx-xl-5">
+            <div class="col-xs-12 col-md-6">
+              <div class="img-wrapper position-relative bsb-hover-push">
+                <a href="#!">
+                  <span class="badge rounded-pill text-bg-warning position-absolute top-0 end-0 m-3">Rehabilitation </span>
+                  <img class="img-fluid rounded w-100 h-100 object-fit-cover" loading="lazy" src="{{asset('updates/rescue/resc1.jpg')}}" alt="Travel">
+                </a>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div>
+                <p class="text-secondary mb-1"></p>
+                <h2 class="h1 mb-3"><a class="link-dark text-decoration-none" href="{{ route('focus.rehab') }}">Rehabilitation of Street Families</a></h2>
+                <p class="mb-4">
+                  With the goal of eradicating extreme poverty for all people everywhere and
+               ending hunger.
+               It all begins with ending child poverty; and according all children including street
+              children equal opportunities in quality education, sanitation, economic opportunities and good health.
+                </p>
+                <a class="btn btn-primary" href="{{ route('focus.rehab') }}" >Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="row align-items-center gy-3 gy-md-0 gx-xl-5">
+            <div class="col-xs-12 col-md-6">
+              <div class="img-wrapper position-relative bsb-hover-push">
+                <a href="#!">
+                  <span class="badge rounded-pill text-bg-warning position-absolute top-0 start-0 m-3">Legal Aid</span>
+                  <img class="img-fluid rounded w-100 h-100 object-fit-cover" loading="lazy" src="{{asset('updates/ligal/ajlap.jpg')}}" alt="Photography">
+                </a>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div>
+                <p class="text-secondary mb-1"></p>
+                <h2 class="h1 mb-3"><a class="link-dark text-decoration-none"  href="{{ route('focus.legal') }}">Legal Aid/ Advocacy</a></h2>
+                <p class="mb-4">
+                  Access to Justice Legal Aid Program(AJLAP)
+
+                 The Access to Justice Legal Aid Program (AJLAP) is a specific program by Action for
+                    Children in Conflict that seeks to promote access to justice, strengthen the rule of law, promote human
+                    rights and significantly reduce all forms of violence in the society..
+
+                </p>
+                <a class="btn btn-primary" href="{{ route('focus.legal') }}" >Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <div class="row align-items-center flex-row-reverse gy-3 gy-md-0 gx-xl-5">
+            <div class="col-xs-12 col-md-6">
+              <div class="img-wrapper position-relative bsb-hover-push">
+                <a href="{{ route('focus.education') }}">
+                  <span class="badge rounded-pill text-bg-warning position-absolute top-0 end-0 m-3">Education Empowerment
+
+                  </span>
+                  <img class="img-fluid rounded w-100 h-100 object-fit-cover" loading="lazy" src="{{asset('updates/trc.jpg')}}" alt="Food">
+                </a>
+              </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+              <div>
+                <p class="text-secondary mb-1"></p>
+                <h2 class="h1 mb-3"><a class="link-dark text-decoration-none" href="#!">Education Empowerment</a></h2>
+                <p class="mb-4">
+                  With a regional fertility rate of 5.1, compared to a global average of 2.4, and
+                a 2030 projected
+
+              population size of 1.5 billion people</h3>
+
+                there needs to be an increase in the supply of educational
+
+              opportunities for all children in order to meet the growing demand in sub-Saharan Africa..
+                </p>
+                <a class="btn btn-primary" href="{{ route('focus.education') }}" >Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>

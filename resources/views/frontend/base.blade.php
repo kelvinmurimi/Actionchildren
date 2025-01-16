@@ -8,6 +8,11 @@
     <meta content="Free Website Template" name="keywords">
     <meta content="Free Website Template" name="description">
 
+
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/blogs/blog-1/assets/css/blog-1.css">
+
+
     <!-- Favicon -->
     <link href="{{ asset('frontend/ui/img/main.jpg') }}" rel="icon">
     <link rel="stylesheet" href="{{ asset('libcss/aimy/style.css') }}">
@@ -117,6 +122,21 @@
             }
         }
     </style>
+    
+    <style>
+/* For screens less than 600px wide */
+@media screen and (max-width: 600px) {
+  .mb4{
+    font-size: 14px;
+  }
+}
+
+/* For screens less than 400px wide */
+@media screen and (max-width: 400px) {
+   .mb-4{
+    font-size: 12px;
+  }
+</style>
 
     <!-- end alternating cards css-->
 </head>
@@ -134,7 +154,7 @@
         s0.parentNode.insertBefore(s1, s0);
     })();
 </script>
-<!--End of Tawk.to Script-->
+<!-- End of Tawk.to Script-->
 
 <body>
     <!-- Top Bar Start -->
