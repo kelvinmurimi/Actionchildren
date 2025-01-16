@@ -1,4 +1,4 @@
-{{--
+
 <!-- Facts Start -->
 <div class="facts" data-parallax="scroll" data-image-src="{{ asset('frontend/homeimg/second.jpg') }}">
     <div class="container">
@@ -43,8 +43,7 @@
     </div>
 </div>
 <!-- Facts End -->
-
-<!-- Fact 3 - Bootstrap Brain Component -->
+{{--<!-- Fact 3 - Bootstrap Brain Component -->
 <section class="bg-light py-3 py-md-5">
     <div class="container">
       <div class="row justify-content-md-center">
@@ -101,8 +100,7 @@
     </div>
   </section>--}}
 
-
-  <!-- Fact 1 - Bootstrap Brain Component -->
+{{--   <!-- Fact 1 - Bootstrap Brain Component -->
 <section class="bg-light py-3 py-md-5 py-xl-8">
   <div class="container">
     <div class="row gy-3 gy-md-5 gy-lg-0 align-items-center">
@@ -180,4 +178,4 @@
       </div>
     </div>
   </div>
-</section>
+</section> --}}
