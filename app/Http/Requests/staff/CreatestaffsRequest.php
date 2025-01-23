@@ -18,6 +18,7 @@ class CreatestaffsRequest extends FormRequest
         return [
             //
             'name'=>'required',
+            'position'=>['required'],
             'image'=>'required',
             'bio'=>'required',
             'department'=>'required',

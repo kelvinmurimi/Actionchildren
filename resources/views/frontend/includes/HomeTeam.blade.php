@@ -14,7 +14,8 @@
                         <img src="{{ asset($team->image)}}" alt="Team Image">
                     </div>
                     <div class="team-text">
-                        <strong class="text-warning">{{ $team->department }}</strong><br>
+                        <strong class="text-primary" style="color: #3871c1 !important;">{{ $team->department }}</strong><br>
+                        <strong class="text-primary">{{ $team->position }}</strong><br>ccc
                        <a href="{{ route('team.show',$team->id) }}" class="btn btn-primary">
                         About Me
                        </a>

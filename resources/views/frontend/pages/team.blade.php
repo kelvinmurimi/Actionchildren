@@ -111,8 +111,10 @@
                         <img src="{{ asset($team->image)}}" alt="">
                     </div>
                     <div class="contentBx">
-                       <h5>{{$team->name}}</h5>
-                       <strong style="color:orange;">{{ $team->department }}</strong> <br>
+                     <div class="text-staff">
+                        <strong><span style="color:#ff914D !important;">{{$team->name}}</span></strong>
+                        <span style="color:#3871c1 !important;">{{$team->position}}</span>
+                       </div>
                        {{ Str::limit($team->bio,100) }}
                        <a class="btn btn-primary" href="{{ route('team.show',$team->id) }}">About Me<i class="fa fa-arrow-right"></i></a>
                     </div>
@@ -123,7 +125,7 @@
 
            @endforeach
 
-
+        0745954947
         </div>
         </div>
 

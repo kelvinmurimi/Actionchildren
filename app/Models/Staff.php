@@ -15,5 +15,6 @@ class Staff extends Model
         'image',
         'bio',
         'department',
+        'position',
     ];
 }

@@ -24,11 +24,21 @@
                         {{-- staff Title --}}
                         <label for="staff name"
                             class="block text-sm font-medium leading-5 text-gray-700 dark:text-gray-200"><strong>staff
-                                Title</strong></label>
+                                Name</strong></label>
                         <input type="text" name='name'
                             class="block w-full dark:bg-gray-500 dark:text-gray-200 dark:placeholder-gray-200 border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-light-blue-500 focus:border-light-blue-500 sm:text-sm"
                             value="  {{ old('name') }}">
                         @error('name')
+                            <p class="error">{{ $message }}</p>
+                        @enderror
+                        {{-- staff Title --}}
+                        <label for="staff name"
+                            class="block text-sm font-medium leading-5 text-gray-700 dark:text-gray-200"><strong>staff
+                                Position/Position</strong></label>
+                        <input type="text" name='position'
+                            class="block w-full dark:bg-gray-500 dark:text-gray-200 dark:placeholder-gray-200 border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-light-blue-500 focus:border-light-blue-500 sm:text-sm"
+                            value="  {{ old('position') }}">
+                        @error('position')
                             <p class="error">{{ $message }}</p>
                         @enderror
 
@@ -46,22 +56,24 @@
                         {{-- staff Category  --}}
                         <label for="staff category"
                             class="block text-sm font-medium leading-5 text-gray-700 dark:text-gray-200"><strong>staff
-                                Department</strong></label>
+                                Hearachy</strong></label>
                         <select type="text" name='department'
                             class="block w-full dark:bg-gray-500 dark:text-gray-200 dark:placeholder-gray-200 border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-light-blue-500 focus:border-light-blue-500 sm:text-sm"
                             value="  {{ old('department') }}">
 
-                            <option value="young">Young Friends Of Afcic</option>
-                            <option value="board">Board Directors</option>
-                            <option value="accountant">Accountant</option>
-                            <option value="intern">Intern</option>
-                            <option value="ict">ICT</option>
-                            <option value="cook">Chef</option>
-                            <option value="legal">Legal Aid</option>
+                            <option value="DA">Director Of Afcic</option>
+                            <option value="AD">Assistant Director Hr</option>
+                            <option value="PM">Program Manager</option>
+                            <option value="FM">Finance Manger</option>
+                            <option value="ICT">ICT & Communication</option>
+                            <option value="FRM">Fund Raising Manager</option>
+                            <option value="cook">Chefs</option>
+                            <option value="SMT">Sinior Managent Team</option>
                         </select>
                         @error('department')
                             <p class="error">{{ $message }}</p>
                         @enderror
+                       
                         {{-- staff Excerpt --}}
                         <label for="staff bio"
                             class="block text-sm font-medium leading-5 text-gray-700 dark:text-gray-200"><strong>Staff

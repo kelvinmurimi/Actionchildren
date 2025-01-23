@@ -35,13 +35,15 @@ class StaffsController extends Controller
 
     public function store(CreatestaffsRequest $request)
     {
-        //
+        //dd($request)
+        ;
         $request->validated();
         $department=Str::slug($request->title,'-');
         $image ='staff/images'.'/'.time().$request->name.'.'.$request->image->extension();
         $request->image->move(public_path('staff/images'),$image);
         Staff::create([
              'name'=>$request->name,
+             'position'=>$request->position,
              'bio'=>$request->bio,
              'department'=>$department,
              'image'=>$image,
@@ -76,6 +78,7 @@ class StaffsController extends Controller
         $staff = Staff::findOrFail($id);
         $staff->update([
             'name'=>$request->name,
+            'position'=>$request->position,
             'bio'=>$request->bio,
             'department'=>$request->department,
             'image'=>$image,
