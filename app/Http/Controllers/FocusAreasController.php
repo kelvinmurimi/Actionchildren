@@ -50,7 +50,7 @@ class FocusAreasController extends Controller
 
     public function education(){
         $title=' Education Empowerment';
-        $youngfriends = Staff::where('department', 'young')->latest()->paginate(4);
+        $youngfriends = Staff::latest()->paginate(5);
 
         $partners = Partner::latest()->paginate(5);
         $articles = Article::latest()->paginate(6);

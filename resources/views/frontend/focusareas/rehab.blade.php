@@ -7,142 +7,37 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8">
+                    <!-- start single content -->
                     <div class="single-content">
-                        <img src="{{ asset('media/trc.jpg') }}" />
-                        <h4 class="text-info">Access to Justice Legal Aid Programme (AJLAP)
-                        </h4>
-                        <P style="font-weight:900; color:orange;">
-                            Access to Justice Legal Aid Programme (AJLAP) is a specific program by Action for Children in
-                            Conflict
-                            that seeks to promote access to justice, strengthen the rule of law, promote human rights and
-                            significantly reduce all forms of violence in the society.
-                        </P>
-                        <div>
-                            <img src="{{ asset('media/trcobj.jpg') }}" />
-                        </div>
-
-                        <strong class="text-warning">MAIN OBJECTIVES</strong> <br>
-
-                        <strong>
-                            <p>To prevent children from dropping out of school to the streets because of lack of basic
-                                provision
-                                through economically empowering their guardian.
-                            </p>
-                            <p>To help parents regain the self-esteem they have lost through poverty and their inability to
-                                meet
-                                their children’s basic needs, giving them a legitimate income to support themselves and
-                                their
-                                dependants.</p>
-
-                            <p>To offer legal aid services in children matters ranging from custody and maintenance to land
-                                and
-                                succession issues.</p>
-
-                            <p>To be a major policy and legislation influencer on children rights issues both at national
-                                and
-                                county levels of government.</p>
-                            <p>To inform and create awareness on issues of child rights
-
-                                <strong>>(.)</strong>To promote access to justice for and by children victims and/or
-                                offenders.
-                            </p>
-
-                        </strong>
+                        <img src="{{ asset('media/trcobj.jpg') }}" />
+                       
+                       <p>
+                        <h3 class="blue">RESCUE AND REHABILITATION</h3>
+                        Our Temporary Rescue and Rehabilitation Center is a safe space for street-connected children and youth, offering immediate shelter, care, and a nurturing environment that fosters hope, growth, and transformation. Guided by our core values of compassion, dignity, and resilience, we empower children to reclaim their lives and reach their full potential.
+                        Our dedicated team of social workers, educators, and volunteers works tirelessly to create a supportive environment where every child feels safe and loved. With diverse expertise and a shared vision, we aim to make a lasting impact on the lives of these vulnerable children.
+                       <p class="orange">At the center, we provide comprehensive services tailored to each child's unique needs, including:</p> 
+                        
+                        <ul>
+                            <li>Emergency rescue and shelter </li>
+                            <li>Counseling and psychological support</li>
+                            <li>Education and skills development</li>
+                            <li>Health and wellness programs</li>
+                            <li>Family reunification and reintegration</li>
+                            <li>Recreational and creative arts activities</li>
+                        </ul>
+                       </p>
+                     
 
                         <div>
-                            <h1 class="text-info">How We Do It</h1>
+                            <h5 class="text-info">Children At TRC.</h5>
                             <img src="{{ asset('media/trcobj1.jpg') }}" />
-                            <strong class="text-orange">
-
-                                Awareness Campaigns & Outreach Programmes, Training and Capacity Building
-
-                            </strong>
-
-
-                            <p> The program conducts clinics and for a in the community aimed at sensitizing the
-
-                                community on child rights, gender based violence and access to justice.
-
-                                In addition, we hold training with various players in the justice system including the
-
-                                judiciary, the police and other court users with a view to informing court users of court
-                                processes and
-                                reducing corruption and bribery in the justice system. In addition, it promotes the
-                                development of
-                                effective, accountable and transparent institutions Moreover, the program is engaged with
-                                establishment of
-                                child rights clubs in local primary schools with the view entrenching human rights issues
-                                and rule of law
-                                in the children to make them human rights champions of today and the future.
-
-                            </p>
-
-
-                            <p>
-
-                                <strong class="orange">
-
-                                  Legal Aid Services
-
-                                </strong>
-
-
-
-                                Legal aid services are offered to clients through public interest litigation, institution of court
-                                proceedings, training on court procedures & the art of self-representation and offering of free legal
-                                advice to clients. Further, we watch brief for children and women victims of crimes such as defilement,
-                                rape, domestic violence and cases involving child offenders, to ensure that the criminal
-
-                                process is conducted well to bring about just outcomes and protect against shoddy and haphazard
-                                prosecutions, also deterring corrupt prosecutors or judicial officers.
-
-                              </p>
-
-                              <p>
-
-                                <strong class="orange">
-
-                                  Alternative Dispute Resolution Mechanisms
-
-                                </strong>
-
-
-
-                                Alternative Dispute Resolution is encouraged to enhance access to justice. This is more so in matters of
-                                child support and maintenance to reduce instances of child neglect, abuse, exploitation and/or torture.
-
-
-
-
-
-                                <strong class="orange">
-
-                                  Advocacy and Policy Formulation
-
-                                </strong>
-
-                                AJLAP is involved and participates in stakeholder meetings touching on legislation and
-
-                                policies at both national and county levels of government. This promotes responsive,
-
-                                inclusive, participatory representative decision-making as well as promotion and
-
-                                enforcement of non-discriminatory laws and policies, bringing about sustainable
-
-                                development..
-
-
-
-                              </p>
-
-
-
+                    
                         </div>
 
 
 
 
-                    </div>
+                    </div><!-- end single content -->
 
 
                     <div class="single-related">
@@ -182,7 +77,7 @@
                         </div>
 
                         <div class="sidebar-widget">
-                            <h2 class="widget-title">Young Friends </h2>
+                            <h2 class="widget-title">Our Team </h2>
                             <div class="recent-post">
                                 @foreach ($youngfriends as $friend)
                                     <div class="post-item">

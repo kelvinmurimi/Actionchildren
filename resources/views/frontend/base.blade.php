@@ -41,7 +41,16 @@
         }
 
         .orange {
-            color: orange !important;
+            color: #ff914d !important;
+        }
+        .blue{
+            color: #ff914d !important;
+        }
+        .btn:hover{
+            background-color: #ff914d !important;
+        }
+        .link-dark:hover{
+            background-color: #ff914d !important;
         }
     </style>
     <!-- Alternating Cards css  -->
@@ -140,22 +149,6 @@
 
     <!-- end alternating cards css-->
 </head>
-{{---
-<!--Start of Tawk.to Script
-<script type="text/javascript">
-    var Tawk_API = Tawk_API || {},
-        Tawk_LoadStart = new Date();
-    (function() {
-        var s1 = document.createElement("script"),
-            s0 = document.getElementsByTagName("script")[0];
-        s1.async = true;
-        s1.src = 'https://embed.tawk.to/62874b747b967b1179905840/1g3g7tgau';
-        s1.charset = 'UTF-8';
-        s1.setAttribute('crossorigin', '*');
-        s0.parentNode.insertBefore(s1, s0);
-    })();
-</script>
-<!-- End of Tawk.to Script-->  --}}
 
 <body>
     <!-- Top Bar Start -->

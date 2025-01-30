@@ -69,6 +69,8 @@
                             <option value="FRM">Fund Raising Manager</option>
                             <option value="cook">Chefs</option>
                             <option value="SMT">Sinior Managent Team</option>
+                            <option value="young">Young Friends</option>
+                            <option value="volunteer">Volunteer</option>
                         </select>
                         @error('department')
                             <p class="error">{{ $message }}</p>

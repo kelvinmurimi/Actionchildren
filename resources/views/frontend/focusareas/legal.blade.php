@@ -12,7 +12,22 @@
                     <img src="{{ asset('updates/ligal/ajlap.jpg') }}" />
                     <h4 class="text-info">Access to Justice Legal Aid Programme (AJLAP)
                     </h4>
-                    <P style="font-weight:600; color:orange;">
+                    <p>
+                        Access to Justice and Legal Aid Program (AJLAP) is a specific program by Action for Children in Conflict that seeks to promote access to justice, strengthen the rule of law, promote human rights, and significantly reduce all forms of violence in the society.
+                    The program aims;
+
+                    <li>To offer legal aid services in children matters ranging from custody and maintenance to land and succession issues.</li>
+                    <li>To be a major policy and legislation influencer on children’s rights issues both at national and county levels of government.</li>
+                      <li>To inform and create awareness on issues of child rights.</li>
+                   <li>To promote access to justice for and by children victims and/or offenders. </li>
+
+ 
+ 
+
+
+
+                    </p>
+                  {{--  <P style="font-weight:600; color:orange;">
                         Access to Justice Legal Aid Programme (AJLAP) is a specific program by Action for Children in
                         Conflict
                         that seeks to promote access to justice, strengthen the rule of law, promote human rights and
@@ -78,7 +93,7 @@
 
                         </p>
 
-<br>
+                           <br>
                         <p>
 
                             <strong class="orange">
@@ -98,7 +113,7 @@
                             prosecutions, also deterring corrupt prosecutors or judicial officers.
 
                           </p>
-<br>
+                                  <br>
                           <p>
 
                             <strong class="orange">
@@ -113,7 +128,7 @@
                             child support and maintenance to reduce instances of child neglect, abuse, exploitation and/or torture.
 
 
-<br>
+                               <br>
 
 
                             <strong class="orange">
@@ -138,7 +153,7 @@
 
 
 
-                    </div>
+                    </div>--}}
 
 
 
@@ -183,7 +198,7 @@
                     </div>
 
                     <div class="sidebar-widget">
-                        <h2 class="widget-title">Young Friends </h2>
+                        <h2 class="widget-title">Our Team </h2>
                         <div class="recent-post">
                             @foreach ($youngfriends as $friend)
                                 <div class="post-item">
