@@ -222,7 +222,7 @@
               <div>
                 <p class="text-secondary mb-1"></p>
                 <h2 class="h1 mb-3"><a class="link-dark text-decoration-none" href="{{route('focus.economic')}}">Economic Empowerment</a></h2>
-                <p class="mb-4">
+                <p class="text-secondary">
                 The AfCiC Economic Empowerment programme is designed to give people the tools to
               be able to support themselves economically
 
@@ -231,7 +231,8 @@
               themselves.
 
                 </p>
-                <a class="btn btn-primary" href="{{route('focus.economic')}}" >Read More</a>
+                <a class="btn btn-primary mb-10"  href="{{route('focus.economic')}}" >Read More</a>
+                <hr>
               </div>
             </div>
           </div>
@@ -258,6 +259,7 @@
               children equal opportunities in quality education, sanitation, economic opportunities and good health.
                 </p>
                 <a class="btn btn-primary" href="{{ route('focus.rehab') }}" >Read More</a>
+                <hr>
               </div>
             </div>
           </div>
@@ -286,11 +288,12 @@
 
                 </p>
                 <a class="btn btn-primary" href="{{ route('focus.legal') }}" >Read More</a>
+                <hr>
               </div>
             </div>
           </div>
         </div>
-
+              
         <div class="col-12">
           <div class="row align-items-center flex-row-reverse gy-3 gy-md-0 gx-xl-5">
             <div class="col-xs-12 col-md-6">
@@ -318,6 +321,7 @@
               opportunities for all children in order to meet the growing demand in sub-Saharan Africa..
                 </p>
                 <a class="btn btn-primary" href="{{ route('focus.education') }}" >Read More</a>
+                <hr>
               </div>
             </div>
           </div>
