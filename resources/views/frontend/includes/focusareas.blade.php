@@ -196,7 +196,7 @@
 ---}}
 <!-- Blog 1 - Bootstrap Brain Component -->
 <section class="py-3 py-md-5">
-    <h3 class="text-primary text-center">Our Focus Areas.</h3>
+    <h3 class="text-primary text-center blue">Our Focus Areas.</h3>
     <div class="row justify-content-md-center">
 
         <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
@@ -206,9 +206,10 @@
           <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
         </div>
 
-      </div>
+     </div>
+    
     <div class="container overflow-hidden">
-      <div class="row gy-5">
+      <div class="row gy-5 overflow-hidden">
        {{--- <div class="col-12">
           <div class="row align-items-center gy-3 gy-md-0 gx-xl-5">
             <div class="col-xs-12 col-md-6">
@@ -308,7 +309,7 @@
                   Education empowerment is a narrative that champions the transformative power of education in individuals and societies. It revolves around the idea to give the child access to quality education. AfCiC is able to contribute to this Global motive by sponsoring children from vulnerable backgrounds...
                 </p>
                 <a class="btn btn-primary" href="{{ route('focus.education') }}" >Read More</a>
-                <hr>
+                <hr class="orange">
               </div>
             </div>
           </div>

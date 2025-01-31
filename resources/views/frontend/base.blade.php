@@ -248,15 +248,15 @@
 
 
     <!-- Footer Start -->
-    <div class="footer" style="background-color: #1469f5;">
+    <div class="footer" style="background-color: #3871c1 !important;">
         <div class="container">
             <div class="row">
                 <div class="col-lg-3 col-md-6">
                     <div class="footer-contact">
                         <h2>Our Head Office</h2>
                         <p class="white"><i class="fa fa-map-marker-alt"></i>Action for Children in Conflict Section
-                            9, Thika, Kenya. P.O. BOX 6439-01000</p>
-                        <p class="white"><i class="fa fa-phone"></i>+254 714 038285,
+                            9, Thika, Kenya. P.O. BOX 6439-01000</p> 
+                        <p class="white"><i class="fa fa-phone"></i>+254 714 038285,<br>
                             +254 722 753 137</p>
                         <p class="white"><i class="fa fa-envelope"></i>infokenya@actionchildren.or.ke
                             kenyadirector@actionchildren.or.ke</p>
