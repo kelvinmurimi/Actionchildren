@@ -44,7 +44,7 @@
             color: #ff914d !important;
         }
         .blue{
-            color: #ff914d !important;
+            color: #3871c1 !important;
         }
         .btn:hover{
             background-color: #ff914d !important;
@@ -132,26 +132,11 @@
         }
     </style>
 
-    <style>
-/* For screens less than 600px wide */
-@media screen and (max-width: 600px) {
-  .mb4{
-    font-size: 14px;
-  }
-}
 
-/* For screens less than 400px wide */
-@media screen and (max-width: 400px) {
-   .mb-4{
-    font-size: 12px;
-  }
-</style>
-
-    <!-- end alternating cards css-->
 </head>
 
 <body>
-    <!-- Top Bar Start -->
+    <!--- Top Bar Start -->
     <div class="top-bar d-none d-md-block">
         <div class="container-fluid">
             <div class="row">
@@ -194,9 +179,9 @@
 
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="navbar-nav ml-auto">
-                    <!-- // Home Page-->
+                   
                     <a href="/" class="nav-item nav-link active">Home</a>
-                    <!-- // About Afcic-->
+                  
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About Us</a>
                         <div class="dropdown-menu">

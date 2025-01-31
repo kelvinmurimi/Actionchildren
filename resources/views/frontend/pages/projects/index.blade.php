@@ -13,7 +13,7 @@
             <img class="card-img" src="{{ asset($project->image) }}" alt="Card image cap">
             </div>
             <div class="card-body">
-              <h4 class="card-title">{{ $project->title }}</h4>
+              <h4 class="card-title blue">{{ $project->title }}</h4>
               <p class="card-text">{{Str::limit($project->description , 100, '....') }}</p>
               <a href="{{ route('projects.show',$project->id) }}" class="btn btn-outline-primary">View Details</a>
             </div>
