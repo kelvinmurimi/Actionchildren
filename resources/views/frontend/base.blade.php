@@ -234,8 +234,20 @@
 
                         </div>
                     </div>
-                    <!-- // Blog Contact-->
-                    <a href="{{ route('blog') }}" class="nav-item nav-link">Blog</a>
+                    <!-- // Resources-->
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Resources</a>
+                        <div class="dropdown-menu">
+                            <a href="{{ route('centers.wcc') }}" class="dropdown-item white">Annual Reports</a>
+                            <a href="{{ route('centers.trc') }}" class="dropdown-item white">Organisition Profile</a>
+                            <a href="{{ route('centers.sfp') }}" class="dropdown-item white">Thought leadership</a>
+                            <a href="{{ route('donation.form') }}" class="dropdown-item white">Volunteer Diaries</a>
+                            <a href="{{ route('donation.form') }}" class="dropdown-item white">Newsletter</a>
+                            <a href="{{ route('donation.form') }}" class="dropdown-item white">Our Blog</a>
+
+                        </div>
+                    </div>
+                   
                     <a href="{{ route('contact') }}" class="nav-item nav-link">Contact</a>
 
                 </div>
