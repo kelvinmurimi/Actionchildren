@@ -236,7 +236,7 @@
                     </div>
                     <!-- // Resources-->
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Resources</a>
+                        <a href="#" class="nav-link dropdown-togg   `le" data-toggle="dropdown">Resources</a>
                         <div class="dropdown-menu">
                             <a href="{{ route('centers.wcc') }}" class="dropdown-item white">Annual Reports</a>
                             <a href="{{ route('centers.trc') }}" class="dropdown-item white">Organisition Profile</a>
