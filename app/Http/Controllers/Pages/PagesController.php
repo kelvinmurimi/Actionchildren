@@ -38,7 +38,7 @@ class PagesController extends Controller
     public function aboutAfcic()
     {
         $title = "About Us";
-        $staff = Staff::where('department', 'board')->latest()->paginate(3);
+        $staff = Staff::where('department', 'DA')->latest()->paginate(3);
         return view('frontend.pages.about', [
             'title' => $title,
             'staff' => $staff,
@@ -81,7 +81,7 @@ class PagesController extends Controller
     public function teamDetails($id)
     {
         $title = "Our Team";
-        $youngfriends = Staff::where('department', 'young')->latest()->paginate(4);
+        $youngfriends = Staff::where('department', 'DA')->latest()->paginate(4);
         $staff = Staff::findOrFail($id);
         $partners = Partner::latest()->paginate(5);
         $articles = Article::latest()->paginate(6);
@@ -124,7 +124,7 @@ class PagesController extends Controller
     public function showblog($id)
     {
         $title = "Blog Details";
-        $youngfriends = Staff::where('department', 'young')->latest()->paginate(4);
+        $youngfriends = Staff::where('department', 'DA')->latest()->paginate(4);
 
         $partners = Partner::latest()->paginate(5);
         $articles = Article::latest()->paginate(6);
@@ -201,7 +201,7 @@ class PagesController extends Controller
     {
         $title = 'Job Details';
         $career = Career::findOrFail($id);
-        $youngfriends = Staff::where('department', 'young')->latest()->paginate(4);
+        $youngfriends = Staff::where('department', 'DA')->latest()->paginate(4);
 
         $partners = Partner::latest()->paginate(5);
         $articles = Article::latest()->paginate(6);
@@ -230,7 +230,7 @@ class PagesController extends Controller
           // dd($slug);
         $title = 'Project  Details';
         $project = Project::findOrFail($id);
-        $youngfriends = Staff::where('department', 'young')->latest()->paginate(4);
+        $youngfriends = Staff::where('department', 'DA')->latest()->paginate(4);
 
         $partners = Partner::latest()->paginate(5);
         $articles = Article::latest()->paginate(6);
@@ -243,6 +243,26 @@ class PagesController extends Controller
         ]);
     }
 
+    //resource Pages
+    public function resourcetDetail($id)
+    {
+          // dd($slug);
+          $articles=Article::where('id',$id)->latest()->paginate(6);
+        $title = 'Resources';
+        $project = Project::findOrFail($id);
+        $youngfriends = Staff::where('department', 'DA')->latest()->paginate(4);
+
+        $partners = Partner::latest()->paginate(5);
+        $articles = Article::latest()->paginate(6);
+        return view('frontend.pages.projects.show', [
+            'title' => $title,
+            'project' => $project,
+            'partners' => $partners,
+            'youngfriends' => $youngfriends,
+            'articles' => $articles,
+        ]);
+    }
+     
 
 
 

@@ -18,7 +18,7 @@ Route::get('/info/Contact', [PagesController::class, 'contactPage'])->name('cont
 Route::post('/afcic/Contact', [PagesController::class, 'sendContactInfo'])->name('contact.send');
 Route::get('/Our-Team', [PagesController::class, 'teamAfcic'])->name('pages.team');
 Route::get('/Our-Team/{id}/show', [PagesController::class, 'teamDetails'])->name('team.show');
-Route::get('/afcic/blog', [PagesController::class, 'blog'])->name('blog');
+//Route::get('/afcic/blog', [PagesController::class, 'blog'])->name('blog');
 Route::get('/Afcic/blogDetails/{id}/show', [PagesController::class, 'showblog'])->name('blog.show');
 Route::get('/info/volunteer', [PagesController::class, 'volunteerToday'])->name('volunteer');
 Route::post('/info/volunteer/details', [PagesController::class, 'volunteerDetails'])->name('volunteer.details');
@@ -43,3 +43,5 @@ Route::post('/Afcic/donation/data', [PagesController::class, 'donate'])->name('d
 //Projects
 Route::get('/Afcic/projects/info', [PagesController::class, 'projects'])->name('projects.index');
 Route::get('/Afcic/projects/{slug}/details', [PagesController::class, 'projectDetail'])->name('projects.show');
+//Resources
+Route::get('/Afcic/resources/{id}/details', [PagesController::class, 'resourcetDetail'])->name('resourcepage.show');
