@@ -10,16 +10,15 @@
 
 
     <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/blogs/blog-1/assets/css/blog-1.css">
-<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/facts/fact-1/assets/css/fact-1.css">
+    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/blogs/blog-1/assets/css/blog-1.css">
+    <link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/facts/fact-1/assets/css/fact-1.css">
 
     <!-- Favicon -->
     <link href="{{ asset('frontend/ui/img/main.jpg') }}" rel="icon">
     <link rel="stylesheet" href="{{ asset('libcss/aimy/style.css') }}">
 
     <!-- Google Font-->
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- CSS Libraries
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">-->
@@ -43,15 +42,19 @@
         .orange {
             color: #ff914d !important;
         }
-        .blue{
+
+        .blue {
             color: #3871c1 !important;
         }
-        .btn:hover{
+
+        .btn:hover {
             background-color: #ff914d !important;
         }
-        .link-dark:hover{
+
+        .link-dark:hover {
             background-color: #ff914d !important;
         }
+
     </style>
     <!-- Alternating Cards css  -->
     <style>
@@ -130,6 +133,7 @@
                 padding: 0;
             }
         }
+
     </style>
 
 
@@ -171,7 +175,7 @@
     <div class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container-fluid">
             <a href="/" class="navbar-brand">
-            <img src="{{ asset('logo.png') }}" alt="Afcic logo" >
+                <img src="{{ asset('logo.png') }}" alt="Afcic logo">
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -179,18 +183,16 @@
 
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="navbar-nav ml-auto">
-                   
+
                     <a href="/" class="nav-item nav-link active">Home</a>
-                  
+
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">About Us</a>
                         <div class="dropdown-menu">
                             <a href="{{ route('pages.about') }}" class="dropdown-item white">About</a>
-                            <a href="{{ route('pages.team') }} "class="dropdown-item white">Our Team</a>
+                            <a href="{{ route('pages.team') }} " class="dropdown-item white">Our Team</a>
                             <a href="{{ route('pages.team') }}" class="dropdown-item white">Young Friends</a>
-                            <a href="https://john-muiruri.maps.arcgis.com/apps/Cascade/index.html?appid=f2a1675950a241a8ac27aa57ed711850"
-                                class="dropdown-item white">Our Story</a>
-                            <a href="https://oneofusproject.com/kenya-2020" class="dropdown-item white">One Of us</a>
+                           
                             <a href="{{ route('partners') }}" class="dropdown-item white">Our Partners </a>
                         </div>
                     </div>
@@ -198,28 +200,14 @@
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Our Programs</a>
                         <div class="dropdown-menu">
-
+                            <a href="{{ route('focusareas') }}" class="dropdown-item white">Our Focus Areas</a>
                             <a href="{{ route('projects.index') }}" class="dropdown-item white">Our Projects</a>
 
-                            <a href="{{ route('focusareas') }}" class="dropdown-item white">Our Focus Areas</a>
-                            <a href="{{ route('donation.form') }}" class="dropdown-item white">Events</a>
+
 
                         </div>
                     </div>
-                    <!-- // Careers-->
-                    <div class="nav-item dropdown">
-                        <a href="{{ route('pages.careers') }}" class="nav-link dropdown-toggle"
-                            data-toggle="dropdown">Careers</a>
-                        <div class="dropdown-menu">
-                            <a href="{{ route('pages.careers') }}" class="dropdown-item white">Jobs</a>
-
-                            <a href="{{ route('partners') }}" class="dropdown-item white">Partner With Us</a>
-
-                            <a href="{{ route('volunteer') }}" class="dropdown-item white">Become A Volunteer</a>
-                            <a href="{{ route('donation.form') }}" class="dropdown-item white">Donate Now</a>
-                        </div>
-                    </div>
-
+                
                     <!-- // Centers-->
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Our Centers</a>
@@ -239,16 +227,30 @@
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Resources</a>
                         <div class="dropdown-menu">
                             @php
-                                $resources = App\Models\Category::latest()->get();
+                            $resources = App\Models\Category::latest()->get();
                             @endphp
                             @foreach ($resources as $resource)
-                                 <a href="{{route('resourcepage.show',$resource->id)}}" class="dropdown-item white">{{$resource->name}}</a>
+                            <a href="{{route('resourcepage.show',$resource->id)}}" class="dropdown-item white">{{$resource->name}}</a>
                             @endforeach
-                           
-                          
+                             <a href="https://john-muiruri.maps.arcgis.com/apps/Cascade/index.html?appid=f2a1675950a241a8ac27aa57ed711850" class="dropdown-item white">Our Story</a>
+                            <a href="https://oneofusproject.com/kenya-2020" class="dropdown-item white">One Of us</a>
+
                         </div>
                     </div>
-                   
+                     <!-- // Careers-->
+                    <div class="nav-item dropdown">
+                        <a href="{{ route('pages.careers') }}" class="nav-link dropdown-toggle" data-toggle="dropdown">Careers</a>
+                        <div class="dropdown-menu">
+                            <a href="{{ route('pages.careers') }}" class="dropdown-item white">Jobs</a>
+
+                            <a href="{{ route('partners') }}" class="dropdown-item white">Partner With Us</a>
+
+                            <a href="{{ route('volunteer') }}" class="dropdown-item white">Become A Volunteer</a>
+                            <a href="{{ route('donation.form') }}" class="dropdown-item white">Donate Now</a>
+                        </div>
+                    </div>
+
+                         {{--- contact --}}
                     <a href="{{ route('contact') }}" class="nav-item nav-link">Contact</a>
 
                 </div>
@@ -268,7 +270,7 @@
                     <div class="footer-contact">
                         <h2>Our Head Office</h2>
                         <p class="white"><i class="fa fa-map-marker-alt"></i>Action for Children in Conflict Section
-                            9, Thika, Kenya. P.O. BOX 6439-01000</p> 
+                            9, Thika, Kenya. P.O. BOX 6439-01000</p>
                         <p class="white"><i class="fa fa-phone"></i>+254 714 038285,<br>
                             +254 722 753 137</p>
                         <p class="white"><i class="fa fa-envelope"></i>infokenya@actionchildren.or.ke
@@ -287,11 +289,11 @@
                         <h2>Popular Links</h2>
                         <a href="{{ route('pages.about') }}">About Us</a>
                         @php
-                                $footerresources = App\Models\Category::latest()->take(3)->get();
-                            @endphp
-                            @foreach ($footerresources as $footerresource)
-                                 <a href="{{route('resourcepage.show',$footerresource->id)}}" >{{$resource->name}}</a>
-                            @endforeach
+                        $footerresources = App\Models\Category::orderBy('created_at','desc')->take(3)->get();
+                        @endphp
+                        @foreach ($footerresources as $footerresource)
+                        <a href="{{route('resourcepage.show',$footerresource->id)}}">{{$footerresource->name}}</a>
+                        @endforeach
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
