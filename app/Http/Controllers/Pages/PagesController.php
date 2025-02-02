@@ -123,7 +123,7 @@ class PagesController extends Controller
 
     public function showblog($id)
     {
-        $title = "Blog Details";
+        $title = "Details";
         $youngfriends = Staff::where('department', 'DA')->latest()->paginate(4);
 
         $partners = Partner::latest()->paginate(5);
@@ -247,19 +247,15 @@ class PagesController extends Controller
     public function resourcetDetail($id)
     {
           // dd($slug);
-          $articles=Article::where('id',$id)->latest()->paginate(6);
+          $ourteam = Staff::where('department', 'DA')->latest()->paginate(4);
+          $articles=Article::where('category_id',$id)->latest()->paginate(6);
         $title = 'Resources';
-        $project = Project::findOrFail($id);
-        $youngfriends = Staff::where('department', 'DA')->latest()->paginate(4);
-
-        $partners = Partner::latest()->paginate(5);
-        $articles = Article::latest()->paginate(6);
-        return view('frontend.pages.projects.show', [
+        $resourcePageTitle = Category::findOrFail($id);
+        return view('frontend.articles.index', [
             'title' => $title,
-            'project' => $project,
-            'partners' => $partners,
-            'youngfriends' => $youngfriends,
+            'resourcePageTitle'=> $resourcePageTitle,
             'articles' => $articles,
+            'youngfriends' => $ourteam,
         ]);
     }
      

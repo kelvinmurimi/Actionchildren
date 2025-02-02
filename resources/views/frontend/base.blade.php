@@ -236,13 +236,13 @@
                     </div>
                     <!-- // Resources-->
                     <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-togg   `le" data-toggle="dropdown">Resources</a>
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Resources</a>
                         <div class="dropdown-menu">
                             @php
                                 $resources = App\Models\Category::latest()->get();
                             @endphp
                             @foreach ($resources as $resource)
-                                 <a href="" class="dropdown-item white">{{$resource->name}}</a>
+                                 <a href="{{route('resourcepage.show',$resource->id)}}" class="dropdown-item white">{{$resource->name}}</a>
                             @endforeach
                            
                           
@@ -286,10 +286,12 @@
                     <div class="footer-link">
                         <h2>Popular Links</h2>
                         <a href="{{ route('pages.about') }}">About Us</a>
-                        <a href="{{ route('contact') }}">Contact Us</a>
-                        <a href="{{ route('blog') }}">Popular Causes</a>
-                        <a href="{{ route('blog') }}">Upcoming Events</a>
-                        <a href="{{ route('blog') }}">Latest Blog</a>
+                        @php
+                                $footerresources = App\Models\Category::latest()->take(3)->get();
+                            @endphp
+                            @foreach ($footerresources as $footerresource)
+                                 <a href="{{route('resourcepage.show',$footerresource->id)}}" >{{$resource->name}}</a>
+                            @endforeach
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
@@ -307,7 +309,7 @@
                         <h2 class="white">Newsletter</h2>
                         <form>
                             <input class="form-control pb-2" placeholder="Email goes here">
-                            <button class="btn btn-custom primary">Submit</button>
+                            <button class="btn btn-custom blue">Submit</button>
                             <label style="color:#fff;">Don't worry, we don't spam!</label>
                         </form>
                     </div>

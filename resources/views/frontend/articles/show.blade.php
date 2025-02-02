@@ -55,7 +55,7 @@
                         </div>
 
                         <div class="sidebar-widget">
-                            <h2 class="widget-title">Young Friends </h2>
+                            <h2 class="widget-title">Our Team </h2>
                             <div class="recent-post">
                                 @foreach ($youngfriends as $friend)
                                     <div class="post-item">
