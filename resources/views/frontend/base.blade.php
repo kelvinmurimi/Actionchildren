@@ -191,9 +191,9 @@
                         <div class="dropdown-menu">
                             <a href="{{ route('pages.about') }}" class="dropdown-item white">About</a>
                             <a href="{{ route('pages.team') }} " class="dropdown-item white">Our Team</a>
-                            <a href="{{ route('pages.team') }}" class="dropdown-item white">Young Friends</a>
                            
-                            <a href="{{ route('partners') }}" class="dropdown-item white">Our Partners </a>
+                           <a href="{{ route('partners') }}" class="dropdown-item white">Our Partners </a>
+                             <a href="{{ route('contact') }}" class="dropdown-item white">Our Location</a>
                         </div>
                     </div>
                     <!-- // Donation Causes -->

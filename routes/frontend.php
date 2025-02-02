@@ -8,18 +8,25 @@ use App\Http\Controllers\FocusAreasController;
 use App\Http\Controllers\ProjectController;
 
 
-
+//static pages 
 Route::get('/', [PagesController::class, 'index'])->name('pages.index');
+Route::get('/About-Us', [PagesController::class, 'aboutAfcic'])->name('pages.about');
+//partners
 Route::get('/Afcic-partners', [PagesController::class, 'ourPartners'])->name('partners');
+Route::post('/info/partners/data', [PagesController::class, 'partnerdata'])->name('partner.data');
+//careers
 Route::get('/careers', [PagesController::class, 'careers'])->name('pages.careers');
 Route::get('/careers/{id}/details', [PagesController::class, 'careersDetails'])->name('careers.show');
-Route::get('/About-Us', [PagesController::class, 'aboutAfcic'])->name('pages.about');
+
+//contact
 Route::get('/info/Contact', [PagesController::class, 'contactPage'])->name('contact');
 Route::post('/afcic/Contact', [PagesController::class, 'sendContactInfo'])->name('contact.send');
+//team
 Route::get('/Our-Team', [PagesController::class, 'teamAfcic'])->name('pages.team');
 Route::get('/Our-Team/{id}/show', [PagesController::class, 'teamDetails'])->name('team.show');
 //Route::get('/afcic/blog', [PagesController::class, 'blog'])->name('blog');
 Route::get('/Afcic/blogDetails/{id}/show', [PagesController::class, 'showblog'])->name('blog.show');
+// volunteer
 Route::get('/info/volunteer', [PagesController::class, 'volunteerToday'])->name('volunteer');
 Route::post('/info/volunteer/details', [PagesController::class, 'volunteerDetails'])->name('volunteer.details');
 

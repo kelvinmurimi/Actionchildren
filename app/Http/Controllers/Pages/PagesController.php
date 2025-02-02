@@ -22,7 +22,7 @@ use App\Models\Volunteer;
 class PagesController extends Controller
 {
     /*
-    This Controller Displays Most Of Frontend Interface
+    This Controller Displays Most Of Frontend Ui
      */
     //Home Page
     public function index()
@@ -34,7 +34,7 @@ class PagesController extends Controller
             'staff' => $staff,
         ]);
     }
-    //Home Page
+    //Home About Page
     public function aboutAfcic()
     {
         $title = "About Us";
@@ -44,7 +44,7 @@ class PagesController extends Controller
             'staff' => $staff,
         ]);
     }
-
+    //contact Page
     public function contactPage()
     {
         $title = "contact Us";
@@ -55,29 +55,40 @@ class PagesController extends Controller
     }
 
 
-
+    //Partners
     public function ourPartners()
     {
         $title = "Our  Partners";
 
-        $partners = Partner::latest()->paginate(60);
+        $partners = Partner::latest()->paginate(9);
         return view('frontend.partners.index', [
             'title' => $title,
             'partners' => $partners,
         ]);
     }
-
-
+    //partner data
+    public function partnerdata(ContactFormRequest $req)
+    {
+        $req->validated();
+        Contact::create([
+            'name' => $req->name,
+            'phone' => $req->name,
+            'email' => $req->name,
+            'content' => $req->name,
+        ]);
+        return redirect(route('partners'))->with('success', 'message delivered successfully,we will be in touch soon');
+    }
+    //Team page
     public function teamAfcic()
     {
         $title = "Our Team";
-        $staff = Staff::latest()->get();
+        $staff = Staff::latest()->paginate(18);
         return view('frontend.pages.team', [
             'title' => $title,
             'staff' => $staff,
         ]);
     }
-
+    // Team Details
     public function teamDetails($id)
     {
         $title = "Our Team";
@@ -93,8 +104,8 @@ class PagesController extends Controller
             'articles' => $articles,
         ]);
     }
-    //Contact Post Page
 
+    //Contact Post Page
     public function sendContactInfo(ContactFormRequest $req)
     {
         $req->validated();
@@ -108,7 +119,7 @@ class PagesController extends Controller
     }
 
 
-
+//blog page #depreciated
     public function blog()
     {
         $title = "Our Blog";
@@ -120,7 +131,7 @@ class PagesController extends Controller
         ]);
     }
 
-
+  //Show Single Resource
     public function showblog($id)
     {
         $title = "Details";
@@ -138,7 +149,7 @@ class PagesController extends Controller
             'articles' => $articles,
         ]);
     }
-
+  //volunteer form page
     public function volunteerToday()
     {
         $title = "Volunteer Thika";
@@ -146,6 +157,8 @@ class PagesController extends Controller
             'title' => $title,
         ]);
     }
+
+    /// coleetc  form volunteer data
     public function volunteerDetails(VolunteerFormRequest $req)
     {
         $req->validated();
@@ -158,8 +171,7 @@ class PagesController extends Controller
         return redirect(route('volunteer'))->with('success', 'message delivered successfully,we will be in touch soon');
     }
 
-    //donation
-
+    //donation form
     public function donationform()
     {
         $title = "Donate ";
@@ -169,6 +181,7 @@ class PagesController extends Controller
             'title' => $title,
         ]);
     }
+    //donation form data
     public function donate(DonationFormRequest $req)
     {
         $title = "Donate ";
@@ -181,13 +194,15 @@ class PagesController extends Controller
         ]);
         return redirect(route('donation'))->with('success', 'thank you');
     }
+    //Paypal donations
     public function paypaldonation()
     {
         $title = 'paypal donation';
         return view('frontend.pages.donation', [
             'title' => $title,
         ]);
-    }
+    } 
+    //careers page
     public function careers()
     {
         $title = 'Available Jobs';
@@ -197,6 +212,7 @@ class PagesController extends Controller
             'careers' => $careers
         ]);
     }
+    //show career details
     public function careersDetails($id)
     {
         $title = 'Job Details';
@@ -214,7 +230,7 @@ class PagesController extends Controller
         ]);
     }
 
-    //projects
+    //projects index
     public function projects()
     {
         $title = 'Our Projects';
@@ -224,10 +240,10 @@ class PagesController extends Controller
             'projects' => $projects
         ]);
     }
-
+   //projects Details
     public function projectDetail($id)
     {
-          // dd($slug);
+        // dd($slug);
         $title = 'Project  Details';
         $project = Project::findOrFail($id);
         $youngfriends = Staff::where('department', 'DA')->latest()->paginate(4);
@@ -246,24 +262,23 @@ class PagesController extends Controller
     //resource Pages
     public function resourcetDetail($id)
     {
-          // dd($slug);
-          $ourteam = Staff::where('department', 'DA')->latest()->paginate(4);
-          $articles=Article::where('category_id',$id)->latest()->paginate(6);
+        // dd($slug);
+        $ourteam = Staff::where('department', 'DA')->latest()->paginate(4);
+        $articles = Article::where('category_id', $id)->latest()->paginate(6);
         $title = 'Resources';
         $resourcePageTitle = Category::findOrFail($id);
         return view('frontend.articles.index', [
             'title' => $title,
-            'resourcePageTitle'=> $resourcePageTitle,
+            'resourcePageTitle' => $resourcePageTitle,
             'articles' => $articles,
             'youngfriends' => $ourteam,
         ]);
     }
-     
 
 
 
-/**end of functions
 
- */
+    /**end of functions
 
+     */
 }

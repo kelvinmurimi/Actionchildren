@@ -1,12 +1,12 @@
- <!-- Volunteer Start -->
+ <!-- Partner Start -->
  <div class="volunteer" data-parallax="scroll" data-image-src="{{ asset('frontend/slider/up.jpg') }}">
      <div class="container">
          <div class="row align-items-center">
              <div class="col-lg-7">
                  <div class="volunteer-content">
                      <div class="section-header">
-                         <p>Become A Volunteer</p>
-                         <h2> Let’s make a difference in the lives of Children</h2>
+                         <p>Partner With Us</p>
+                         <h2 class="blue"> Let’s make a difference in the lives of Vulnerable Children.</h2>
                      </div>
                      <div class="volunteer-text">
                          <p>
@@ -19,7 +19,7 @@
              </div>
              <div class="col-lg-5">
                  <div class="volunteer-form">
-                     <form action="{{route('volunteer.details')}}" method="POST">
+                     <form action="{{route('partner.data')}}" method="POST">
                          @csrf
                          <div class="control-group">
                              <input type="text" class="form-control" name="name" placeholder="Name" />
@@ -34,7 +34,7 @@
                              @enderror
                          </div>
                          <div class="control-group">
-                             <input type="phone" class="form-control" name="phone" placeholder="phone number eg +254.." />
+                             <input type="phone" class="form-control" name="phone" placeholder="phone number eg+254..." />
                              @error('phone')
                              <p class="help-block text-danger">{{ $message }}</p>
                              @enderror
