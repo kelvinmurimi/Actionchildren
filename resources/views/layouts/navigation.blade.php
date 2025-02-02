@@ -80,13 +80,13 @@
 
 
 @if(can('view_system_settings') || can('view_roles') || can('view_audit_trails') || can('view_sent_emails'))
-    <x-nav.group label="Blog" route="admin.settings" icon="fas fa-toggle-on">
+    <x-nav.group label="Resources" route="admin.settings" icon="fas fa-toggle-on">
         @can('view_audit_trails')
-            <x-nav.group-item route="categories.index" icon="fas fa-tag" wire:navigate>Categories</x-nav.group-item>
+            <x-nav.group-item route="categories.index" icon="fas fa-tag" wire:navigate>Pages</x-nav.group-item>
         @endcan
 
         @can('view_roles')
-            <x-nav.group-item route="admin.articles.index" icon="fas fa-edit" wire:navigate>Articles</x-nav.group-item>
+            <x-nav.group-item route="admin.articles.index" icon="fas fa-edit" wire:navigate>Page Content</x-nav.group-item>
         @endcan
 
 

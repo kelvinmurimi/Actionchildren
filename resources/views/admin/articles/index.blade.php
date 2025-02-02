@@ -3,7 +3,7 @@
     <div>
         <div class="flex justify-between">
 
-            <h1>{{ __('Resources') }}</h1>
+            <h1>{{ __('Resources Page Content') }}</h1>
 
             <div>
 
