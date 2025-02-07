@@ -32,6 +32,8 @@
     <link href="{{ asset('frontend/ui/lib/animate/animate.min.css') }}" rel="stylesheet">
     <link href="{{ asset('frontend/ui/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
 
+    <!-- Team Stylesheet -->
+    <link href="{{ asset('team.css') }}" rel="stylesheet">
     <!-- Template Stylesheet -->
     <link href="{{ asset('frontend/ui/css/style.css') }}" rel="stylesheet">
     <style>
@@ -53,6 +55,9 @@
 
         .link-dark:hover {
             background-color: #ff914d !important;
+        }
+        . gy-5{
+            overflow:  hidden !important;
         }
 
     </style>
