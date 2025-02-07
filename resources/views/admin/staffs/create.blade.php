@@ -61,16 +61,9 @@
                             class="block w-full dark:bg-gray-500 dark:text-gray-200 dark:placeholder-gray-200 border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-light-blue-500 focus:border-light-blue-500 sm:text-sm"
                             value="  {{ old('department') }}">
 
-                            <option value="DA">Director Of Afcic</option>
-                            <option value="AD">Assistant Director Hr</option>
-                            <option value="PM">Program Manager</option>
-                            <option value="FM">Finance Manger</option>
-                            <option value="ICT">ICT & Communication</option>
-                            <option value="FRM">Fund Raising Manager</option>
-                            <option value="cook">Chefs</option>
-                            <option value="SMT">Sinior Managent Team</option>
-                            <option value="young">Young Friends</option>
-                            <option value="volunteer">Volunteer</option>
+                           @foreach ($departments as $department)
+                           <option value="{{$department->id}}">{{$department->department_name}}</option>
+                           @endforeach
                         </select>
                         @error('department')
                             <p class="error">{{ $message }}</p>

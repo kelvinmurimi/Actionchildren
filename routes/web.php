@@ -66,7 +66,7 @@ Route::get('/volunteer/contact/{id}/details', [AdminContactController::class, 'v
     require __DIR__.'/partners.php';
     require __DIR__.'/staff.php';
     require __DIR__.'/project.php';
-    require __DIR__.'/adminpages.php';
+    require __DIR__.'/departments.php';
 
 });
 //public articles/blog

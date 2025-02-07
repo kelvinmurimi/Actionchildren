@@ -54,15 +54,11 @@
                                 Department</strong></label>
                         <select type="text" name='department'
                             class="block w-full dark:bg-gray-500 dark:text-gray-200 dark:placeholder-gray-200 border border-gray-300 rounded-md shadow-sm py-2 px-3 focus:outline-none focus:ring-light-blue-500 focus:border-light-blue-500 sm:text-sm"
-                            value="  {{ $staff->department }}">
+                            >
 
-                                <option value="young">Young Friends Of Afcic</option>
-                                <option value="board">Board Directors</option>
-                                <option value="accountant">Accountant</option>
-                                <option value="intern">Intern</option>
-                                <option value="ict">ICT</option>
-                                <option value="cook">Chef</option>
-                                <option value="legal">Legal Aid</option>
+                            @foreach ($departments as $department)
+                            <option value="{{$department->id}}">{{$department->department_name}}</option>
+                            @endforeach
                         </select>
                         @error('department')
                             <p class="error">{{ $message }}</p>

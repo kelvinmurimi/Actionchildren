@@ -10,13 +10,14 @@ class StoreDepartmentRequest extends FormRequest
 {
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     public function rules()
     {
         return [
             //
+              'department_name'=>['required','unique:departments,department_name,except,id'],
         ];
     }
 }

@@ -57,12 +57,10 @@
     <x-nav.link route="admin.careers.index" icon="fas fa-bullhorn" wire:navigate>Careers</x-nav.link>
 @endcan
 @can('view_users')
-    <x-nav.link route="admin.partners.index" icon="fas fa-user-plus" wire:navigate>Partners</x-nav.link>
-@endcan
-@can('view_users')
-    <x-nav.link route="admin.staffs.index" icon="fas fa-user" wire:navigate>Staff</x-nav.link>
+    <x-nav.link route="admin.partners.index" icon="fas fa-user" wire:navigate>Partners</x-nav.link>
 @endcan
 
+{{--
 @if(can('view_system_settings') || can('view_roles') || can('view_audit_trails') || can('view_sent_emails'))
     <x-nav.group label="Emails" route="admin.settings" icon="fa fa-envelope-square">
         @can('view_audit_trails')
@@ -76,7 +74,7 @@
 
     </x-nav.group>
 @endif
-
+--}}
 
 
 @if(can('view_system_settings') || can('view_roles') || can('view_audit_trails') || can('view_sent_emails'))
@@ -87,6 +85,19 @@
 
         @can('view_roles')
             <x-nav.group-item route="admin.articles.index" icon="fas fa-edit" wire:navigate>Page Content</x-nav.group-item>
+        @endcan
+
+
+    </x-nav.group>
+@endif
+@if(can('view_system_settings') || can('view_roles') || can('view_audit_trails') || can('view_sent_emails'))
+    <x-nav.group label="Staff" route="departments.index" icon="fas fa-toggle-on">
+        @can('view_audit_trails')
+            <x-nav.group-item route="departments.index" icon="fas fa-user-plus" wire:navigate>Departments</x-nav.group-item>
+        @endcan
+
+        @can('view_roles')
+            <x-nav.group-item route="admin.staffs.index" icon="fas fa-edit" wire:navigate>Manage Staff</x-nav.group-item>
         @endcan
 
 

@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('position');
             $table->string('image');
             $table->text('bio');
-            $table->string('department_id');
+            $table->foreignId('department_id')->nullable()->constrained('departments')->onDelete('cascade')->onUpdate('cascade');
             $table->timestamps();
         });
     }

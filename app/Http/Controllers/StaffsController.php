@@ -8,7 +8,7 @@ use App\Models\Staff;
 use Illuminate\Support\Str;
 use App\Http\Requests\staff\CreatestaffsRequest;
 use Illuminate\Http\Request;
-
+use App\Models\Department;
 class StaffsController extends Controller
 {
     public function index()
@@ -26,9 +26,10 @@ class StaffsController extends Controller
     {
         //
         $title = 'Add New Staff Member';
-
+        $departments= Department::latest()->get();
         return view('admin.staffs.create', [
             'title' => $title,
+            'departments'=>$departments
 
         ]);
     }
@@ -45,7 +46,7 @@ class StaffsController extends Controller
              'name'=>$request->name,
              'position'=>$request->position,
              'bio'=>$request->bio,
-             'department'=>$department,
+             'department_id'=>$department,
              'image'=>$image,
         ]);
         return redirect(route('admin.staffs.index'))->with('success', 'Staff Created Successfully!');
@@ -60,10 +61,12 @@ class StaffsController extends Controller
     {
         //
         $title = 'Edit Staff Member';
+        $departments= Department::latest()->get();
         $staff = Staff::findOrFail($id);
         return view('admin.staffs.edit', [
             'title' => $title,
-            'staff' => $staff
+            'staff' => $staff,
+            'departments'=>$departments,
         ]);
     }
 
@@ -80,7 +83,7 @@ class StaffsController extends Controller
             'name'=>$request->name,
             'position'=>$request->position,
             'bio'=>$request->bio,
-            'department'=>$request->department,
+            'department_id'=>$request->department,
             'image'=>$image,
        ]);
         return redirect(route('admin.staffs.index'))->with('success', 'Staff Updated Successfully!');
