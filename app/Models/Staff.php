@@ -17,4 +17,12 @@ class Staff extends Model
         'department_id',
         'position',
     ];
+
+    //Department Belongs to Staff
+    public function department(){
+        return $this->belongsTo(Department::class);
+      }
+
+
+
 }
