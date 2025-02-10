@@ -18,6 +18,7 @@ use App\Models\Category;
 use App\Models\Donation;
 use App\Models\Project;
 use App\Models\Volunteer;
+use App\Models\Department;
 
 class PagesController extends Controller
 {
@@ -82,10 +83,12 @@ class PagesController extends Controller
     public function teamAfcic()
     {
         $title = "Our Team";
+        $departments=Department::latest()->get();
         $staff = Staff::latest()->paginate(18);
         return view('frontend.pages.team', [
             'title' => $title,
             'staff' => $staff,
+            'departments'=>$departments
         ]);
     }
     // Team Details
