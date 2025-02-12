@@ -15,9 +15,9 @@ class CentersController extends Controller
     public function workingChildren()
     {
         $title = 'Working Children Center';
-        $youngfriends = Staff::where('department', 'young')->latest()->paginate(4);
+        $youngfriends = Staff::latest()->take(5)->get();
         
-        $partners = Partner::latest()->paginate(5);
+        $partners = Partner::latest()->take(5)->get();
         $articles = Article::latest()->paginate(6);
         return view('frontend.centers.workingChildren', [
             'title' => $title,
@@ -30,7 +30,7 @@ class CentersController extends Controller
     public function temporaryRescue()
     {
         $title = 'Temporary Rescue Center';
-        $youngfriends = Staff::where('department', 'young')->latest()->paginate(4);
+        $youngfriends = Staff::latest()->take(5)->get();
         
         $partners = Partner::latest()->paginate(5);
         $articles = Article::latest()->paginate(6);
@@ -45,7 +45,7 @@ class CentersController extends Controller
     public function schoolFeeding()
     {
         $title = 'School Feeding Programme';
-        $youngfriends = Staff::where('department', 'young')->latest()->paginate(4);
+        $youngfriends = Staff::latest()->take(5)->get();
         
         $partners = Partner::latest()->paginate(5);
         $articles = Article::latest()->paginate(6);

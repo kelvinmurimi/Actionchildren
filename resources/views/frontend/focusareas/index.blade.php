@@ -395,17 +395,15 @@
 ---}}
 <!-- Blog 1 - Bootstrap Brain Component -->
 <section class="py-3 py-md-5">
-  <h3 class="text-primary text-center">Our Focus Areas.</h3>
-  <div class="row justify-content-md-center">
-
-      <div class="col-12 col-md-10 col-lg-8 col-xl-7 col-xxl-6">
-
-        <p class="text-center" style="color:#5b5d5f;">Our programs focuses on the following outcomes: 
-          <b>R</b>ehabilitation and reintegration of street-connected children ,  <b>E</b>conomic empowerment,  <b>A</b>ccess to justice and legal aid,  <b>E</b>ducation empowerment ,  <b>C</b>limate change and safe environment. The programs are all connected and essential to ending the cycle of poverty.</p>
-        <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle">
-      </div>
-
-    </div>
+  <div class="section-header text-center">
+    <p> Our Focus Areas.</p>
+    <h6>
+      Our programs focuses on the following outcomes:
+      <b>R</b>ehabilitation and reintegration of street-connected children , <b>E</b>conomic empowerment,
+      <b>A</b>ccess to justice and legal aid, <b>E</b>ducation empowerment , <b>C</b>limate change and safe
+      environment. The programs are all connected and essential to ending the cycle of poverty.
+    </h6>
+</div>
   <div class="container overflow-hidden">
     <div class="row gy-5">
      {{--- <div class="col-12">

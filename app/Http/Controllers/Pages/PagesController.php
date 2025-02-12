@@ -39,7 +39,7 @@ class PagesController extends Controller
     public function aboutAfcic()
     {
         $title = "About Us";
-        $staff = Staff::where('department', 'DA')->latest()->paginate(3);
+        $staff = Staff::latest()->take(5)->get();
         return view('frontend.pages.about', [
             'title' => $title,
             'staff' => $staff,
@@ -91,11 +91,23 @@ class PagesController extends Controller
             'departments'=>$departments
         ]);
     }
+    //department
+    public function departmentDetails($id)
+    {
+        $title = "Our Team";
+        $departments=Department::latest()->get();
+        $staff = Staff::where('department_id',$id)->latest()->paginate(18);
+        return view('frontend.staffs.index', [
+            'title' => $title,
+            'staff' => $staff,
+            'departments'=>$departments
+        ]);
+    }
     // Team Details
     public function teamDetails($id)
     {
         $title = "Our Team";
-        $youngfriends = Staff::where('department', 'DA')->latest()->paginate(4);
+        $youngfriends = Staff::latest()->take(5)->get();
         $staff = Staff::findOrFail($id);
         $partners = Partner::latest()->paginate(5);
         $articles = Article::latest()->paginate(6);
@@ -138,7 +150,7 @@ class PagesController extends Controller
     public function showblog($id)
     {
         $title = "Details";
-        $youngfriends = Staff::where('department', 'DA')->latest()->paginate(4);
+        $youngfriends = Staff::latest()->take(5)->get();
 
         $partners = Partner::latest()->paginate(5);
         $articles = Article::latest()->paginate(6);
@@ -220,7 +232,7 @@ class PagesController extends Controller
     {
         $title = 'Job Details';
         $career = Career::findOrFail($id);
-        $youngfriends = Staff::where('department', 'DA')->latest()->paginate(4);
+        $youngfriends = Staff::latest()->take(5)->get();
 
         $partners = Partner::latest()->paginate(5);
         $articles = Article::latest()->paginate(6);
@@ -249,7 +261,7 @@ class PagesController extends Controller
         // dd($slug);
         $title = 'Project  Details';
         $project = Project::findOrFail($id);
-        $youngfriends = Staff::where('department', 'DA')->latest()->paginate(4);
+        $youngfriends = Staff::latest()->take(5)->get();
 
         $partners = Partner::latest()->paginate(5);
         $articles = Article::latest()->paginate(6);
@@ -266,7 +278,7 @@ class PagesController extends Controller
     public function resourcetDetail($id)
     {
         // dd($slug);
-        $ourteam = Staff::where('department', 'DA')->latest()->paginate(4);
+        $ourteam = Staff::latest()->take(5)->get();
         $articles = Article::where('category_id', $id)->latest()->paginate(6);
         $title = 'Resources';
         $resourcePageTitle = Category::findOrFail($id);

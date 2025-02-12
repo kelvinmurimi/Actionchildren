@@ -22,7 +22,7 @@ class FocusAreasController extends Controller
 
     public function economic(){
         $title='Economic Empowerment';
-        $youngfriends = Staff::where('department', 'young')->latest()->paginate(4);
+        $youngfriends = Staff::latest()->take(5)->get();
 
         $partners = Partner::latest()->paginate(5);
         $articles = Article::latest()->paginate(6);
@@ -36,7 +36,7 @@ class FocusAreasController extends Controller
 
     public function rehab(){
         $title=' Rehabilitation';
-        $youngfriends = Staff::where('department', 'young')->latest()->paginate(4);
+        $youngfriends = Staff::latest()->take(5)->get();
 
         $partners = Partner::latest()->paginate(5);
         $articles = Article::latest()->paginate(6);
@@ -50,8 +50,7 @@ class FocusAreasController extends Controller
 
     public function education(){
         $title=' Education Empowerment';
-        $youngfriends = Staff::latest()->paginate(5);
-
+        $youngfriends = Staff::latest()->take(5)->get();
         $partners = Partner::latest()->paginate(5);
         $articles = Article::latest()->paginate(6);
         return view ('frontend.focusareas.education',[
@@ -63,7 +62,7 @@ class FocusAreasController extends Controller
     }
     public function climate(){
         $title=' Rehabilitation';
-        $youngfriends = Staff::where('department', 'young')->latest()->paginate(4);
+        $youngfriends = Staff::latest()->take(5)->get();
 
         $partners = Partner::latest()->paginate(5);
         $articles = Article::latest()->paginate(6);
@@ -76,7 +75,7 @@ class FocusAreasController extends Controller
     }
     public function legal(){
         $title=' Legal Aid $ Advocacy';
-        $youngfriends = Staff::where('department', 'young')->latest()->paginate(4);
+        $youngfriends = Staff::latest()->take(5)->get();
 
         $partners = Partner::latest()->paginate(5);
         $articles = Article::latest()->paginate(6);

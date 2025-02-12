@@ -16,10 +16,10 @@
                 <div class="about-tab">
                     <ul class="nav nav-pills nav-justified">
                         <li class="nav-item">
-                            <a class="nav-link active" data-toggle="pill" href="#tab-content-1">Sort</a>
+                            <a class="nav-link" data-toggle="pill" href="#tab-content-1">Sort</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link " data-toggle="pill" href="#tab-content-2">All Team</a>
+                            <a class="nav-link  active" data-toggle="pill" href="#tab-content-2">All Team</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" data-toggle="pill" href="#tab-content-3">Partners</a>
@@ -27,15 +27,15 @@
                     </ul>
 
                     <div class="tab-content">
-                        <div id="tab-content-1" class="container tab-pane active">
+                        <div id="tab-content-1" class="container tab-pane ">
                            @foreach ($departments as $department)
-                               <a class="btn btn-primary" href="{{route('frontend.departments.index',$department->id)}}">{{$department->department_name}}</a>,,
+                               <a class="btn btn-primary" href="{{route('frontend.departments.index',$department->id)}}">{{$department->department_name}}</a>,,<hr>
                            @endforeach
                         </div>
                         <div id="tab-content-2" class="container tab-pane fade">
                             <p class="blue">We believe that we can save more lifes with you</p>
                         </div>
-                        <div id="tab-content-3" class="container tab-pane fade">
+                        <div id="tab-content-3" class="container tab-pane fade active">
                             <a class="btn btn-custom" href="{{route('partners')}}">Our Partners</a>
                         </div>
                     </div>

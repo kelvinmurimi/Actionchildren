@@ -24,6 +24,9 @@ Route::post('/afcic/Contact', [PagesController::class, 'sendContactInfo'])->name
 //team
 Route::get('/Our-Team', [PagesController::class, 'teamAfcic'])->name('pages.team');
 Route::get('/Our-Team/{id}/show', [PagesController::class, 'teamDetails'])->name('team.show');
+Route::get('/filter/department/{id}', [PagesController::class, 'departmentDetails'])->name('frontend.departments.index');
+
+//blog
 //Route::get('/afcic/blog', [PagesController::class, 'blog'])->name('blog');
 Route::get('/Afcic/blogDetails/{id}/show', [PagesController::class, 'showblog'])->name('blog.show');
 // volunteer
